@@ -6,7 +6,6 @@
 #import <YouTubeHeader/ELMNodeController.h>
 #import <YouTubeHeader/UIColor+YouTube.h>
 #import <YouTubeHeader/UIImage+YouTube.h>
-#import <YouTubeHeader/YTColor.h>
 #import <YouTubeHeader/YTInlineMutedPlaybackScrubberView.h>
 #import <YouTubeHeader/YTInlineMutedPlaybackScrubbingSlider.h>
 #import <YouTubeHeader/YTIPlayerBarDecorationModel.h>
@@ -22,6 +21,10 @@
 @end
 
 @interface YTSegmentableInlinePlayerBarView (Addition)
+@property (retain, nonatomic) UIImageView *tweakCustomScrubberImageView;
+@end
+
+@interface YTInlinePlayerBarView (Addition)
 @property (retain, nonatomic) UIImageView *tweakCustomScrubberImageView;
 @end
 
@@ -60,11 +63,20 @@ static void updateScrubberSize(UIView *scrubberCircle, CGFloat scale) {
         scrubberCircle.layer.cornerRadius = size / 2;
 }
 
-static void initScrubberCircle(UIView *self) {
+static void initScrubberCircle(UIView *self, BOOL setColor) {
     CGFloat scrubberScale = getBaseScrubberScale();
     if (scrubberScale == -1) return;
     UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
     updateScrubberSize(scrubberCircle, scrubberScale);
+    if (setColor) {
+        if (IsEnabled(ScrubberImageKey))
+            scrubberCircle.backgroundColor = nil;
+        else if (IsEnabled(ScrubberImageColorKey)) {
+            UIColor *scrubberColor = scrubberUIColor();
+            if (!scrubberColor) return;
+            scrubberCircle.backgroundColor = scrubberColor;
+        }
+    }
 }
 
 static CGPoint getScrubberCircleCenter(UIView *self) {
@@ -123,7 +135,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
     id view;
     if ([playerBar respondsToSelector:@selector(modularPlayerBar)])
         view = playerBar.modularPlayerBar.view;
-    else if ([playerBar respondsToSelector:@selector(segmentablePlayerBar)]) {
+    else if ([playerBar respondsToSelector:@selector(segmentablePlayerBar)] && playerBar.segmentablePlayerBar) {
         id segmentablePlayerBar = playerBar.segmentablePlayerBar;
         if ([segmentablePlayerBar isKindOfClass:%c(YTModularPlayerBarController)])
             view = ((YTModularPlayerBarController *)segmentablePlayerBar).view;
@@ -141,7 +153,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 - (id)initWithModel:(id)model delegate:(id)delegate {
     self = %orig;
     if (self)
-        initScrubberCircle(self);
+        initScrubberCircle(self, NO);
     return self;
 }
 
@@ -179,7 +191,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 - (id)init {
     self = %orig;
     if (self)
-        initScrubberCircle(self);
+        initScrubberCircle(self, NO);
     return self;
 }
 
@@ -201,6 +213,42 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
         [self setValue:color forKey:@"_userIsScrubbingProgressBarColor"];
     }
     updateScrubberColorAndPosition(self, YES, CGPointZero);
+}
+
+- (void)layoutSubviews {
+    CGPoint center = getScrubberCircleCenter(self);
+    %orig;
+    updateScrubberColorAndPosition(self, NO, center);
+}
+
+%end
+
+%hook YTInlinePlayerBarView
+
+%property (retain, nonatomic) UIImageView *tweakCustomScrubberImageView;
+
+- (id)init {
+    self = %orig;
+    if (self) {
+        initScrubberCircle(self, YES);
+    }
+    return self;
+}
+
+- (void)transformScrubberScale:(CGFloat)scale {
+    %orig(getScrubberScale(scale));
+}
+
+- (void)setMode:(int)mode {
+    %orig;
+    updateScrubberColorAndPosition(self, YES, CGPointZero);
+    if (IsEnabled(SliderColorKey)) {
+        UIColor *color = sliderUIColor();
+        if (color) {
+            UIView *playingProgress = [self valueForKey:@"_playingProgress"];
+            playingProgress.backgroundColor = color;
+        }
+    }
 }
 
 - (void)layoutSubviews {
@@ -412,7 +460,7 @@ static ELMNodeController *getNodeControllerParent(ELMNodeController *nodeControl
     ELMContainerNode *containerNode = (ELMContainerNode *)self.keepalive_node;
     if (![containerNode isKindOfClass:%c(ELMContainerNode)]) return;
     UIColor *currentColor = [containerNode valueForKey:@"_stretchableBackgroundColor"];
-    if (currentColor == nil || ![currentColor isEqual:[%c(YTColor) colorWithRGB:0xFF0000 floatAlpha:1]]) return;
+    if (currentColor == nil || ![currentColor isEqual:[UIColor colorWithRGBValue:0xFF0000 floatAlpha:1]]) return;
     ASDisplayNode *node = nil;
     ELMNodeController *nodeController = [containerNode controller];
     do {
