@@ -5,9 +5,13 @@
 "SLIDER_COLOR_DESC" = "Change the color of the slider. This also replaces the gradient style of the slider for recent YouTube versions.";
 "SLIDER_COLOR_VALUE" = "Slider color value";
 
+"LIVE_SLIDER_COLOR_VALUE" = "Live slider color value";
+
 "SCRUBBER_COLOR" = "Change scrubber color";
 "SCRUBBER_COLOR_DESC" = "Change the color of the scrubber. This also paints the entire custom scrubber image with the specified color.";
 "SCRUBBER_COLOR_VALUE" = "Scrubber color value";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubber color value";
 
 "SCRUBBER_IMAGE" = "Use custom scrubber image";
 "SCRUBBER_IMAGE_DESC" = "Use a custom image for the scrubber. The image will replace the default circle scrubber.";

@@ -5,9 +5,13 @@
 "SLIDER_COLOR_DESC" = "Thay đổi màu của Slider.  Điều này cũng thay thế kiểu gradient của Slider cho các phiên bản YouTube gần đây.";
 "SLIDER_COLOR_VALUE" = "Chọn màu cho Slider";
 
+"LIVE_SLIDER_COLOR_VALUE" = "Chọn màu cho Slider (Trực tiếp)";
+
 "SCRUBBER_COLOR" = "Thay đổi màu sắc Scrubber";
 "SCRUBBER_COLOR_DESC" = "Thay đổi màu của Scrubber.  Điều này cũng vẽ toàn bộ hình ảnh Scrubber tùy chỉnh với màu được chỉ định.";
 "SCRUBBER_COLOR_VALUE" = "Giá trị màu sắc Scrubber";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Giá trị màu sắc Scrubber (Trực tiếp)";
 
 "SCRUBBER_IMAGE" = "Sử dụng hình ảnh Scrubber tùy chỉnh";
 "SCRUBBER_IMAGE_DESC" = "Sử dụng một hình ảnh tùy chỉnh cho Scrubber.  Hình ảnh sẽ thay thế Scrubber mặc định.";

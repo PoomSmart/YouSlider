@@ -21,7 +21,10 @@ static const NSInteger TweakSection = 'ytsl';
 @end
 
 extern UIColor *scrubberUIColor();
+extern UIColor *scrubberUIColor();
+extern UIColor *liveScrubberUIColor();
 extern UIColor *sliderUIColor();
+extern UIColor *liveSliderUIColor();
 
 BOOL IsEnabled(NSString *key) {
     return [[NSUserDefaults standardUserDefaults] boolForKey:key];
@@ -31,8 +34,16 @@ NSString *GetSliderColor() {
     return [[NSUserDefaults standardUserDefaults] stringForKey:SliderColorValueKey];
 }
 
+NSString *GetLiveSliderColor() {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:LiveSliderColorValueKey];
+}
+
 NSString *GetScrubberColor() {
     return [[NSUserDefaults standardUserDefaults] stringForKey:ScrubberImageColorValueKey];
+}
+
+NSString *GetLiveScrubberColor() {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:LiveScrubberImageColorValueKey];
 }
 
 UIImage *coloredImage(UIImage *image) {
@@ -98,8 +109,12 @@ NSBundle *TweakBundle() {
     NSString *key;
     if ([colorPicker.title isEqualToString:@"Slider"])
         key = SliderColorValueKey;
+    else if ([colorPicker.title isEqualToString:@"Live Slider"])
+        key = LiveSliderColorValueKey;
     else if ([colorPicker.title isEqualToString:@"Scrubber"])
         key = ScrubberImageColorValueKey;
+    else if ([colorPicker.title isEqualToString:@"Live Scrubber"])
+        key = LiveScrubberImageColorValueKey;
     else
         return;
     NSString *hex = [color LOT_hexStringValue];
@@ -162,6 +177,27 @@ NSBundle *TweakBundle() {
         }];
     [sectionItems addObject:sliderColor];
 
+    // Live slider color value
+    YTSettingsSectionItem *liveSliderColor = [YTSettingsSectionItemClass itemWithTitle:LOC(@"LIVE_SLIDER_COLOR_VALUE")
+        titleDescription:nil
+        accessibilityIdentifier:nil
+        detailTextBlock:^NSString *() {
+            return GetLiveSliderColor();
+        }
+        selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
+            HBColorPickerViewController *picker = [HBColorPickerViewController new];
+            picker.title = @"Live Slider";
+            picker.delegate = (NSObject <HBColorPickerDelegate> *)self;
+            picker.popoverPresentationController.sourceView = cell;
+            UIColor *color = liveSliderUIColor();
+            HBColorPickerConfiguration *config = [[HBColorPickerConfiguration alloc] initWithColor:color];
+            config.supportsAlpha = NO;
+            picker.configuration = config;
+            [[%c(YTUIUtils) topViewControllerForPresenting] presentViewController:picker animated:YES completion:nil];
+            return YES;
+        }];
+    [sectionItems addObject:liveSliderColor];
+
     // Scrubber color toggle
     YTSettingsSectionItem *scrubberColorToggle = [YTSettingsSectionItemClass switchItemWithTitle:LOC(@"SCRUBBER_COLOR")
         titleDescription:LOC(@"SCRUBBER_COLOR_DESC")
@@ -194,6 +230,27 @@ NSBundle *TweakBundle() {
             return YES;
         }];
     [sectionItems addObject:scrubberColor];
+
+    // Live scrubber color value
+    YTSettingsSectionItem *liveScrubberColor = [YTSettingsSectionItemClass itemWithTitle:LOC(@"LIVE_SCRUBBER_COLOR_VALUE")
+        titleDescription:nil
+        accessibilityIdentifier:nil
+        detailTextBlock:^NSString *() {
+            return GetLiveScrubberColor();
+        }
+        selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
+            HBColorPickerViewController *picker = [HBColorPickerViewController new];
+            picker.title = @"Live Scrubber";
+            picker.delegate = (NSObject <HBColorPickerDelegate> *)self;
+            picker.popoverPresentationController.sourceView = cell;
+            UIColor *color = liveScrubberUIColor();
+            HBColorPickerConfiguration *config = [[HBColorPickerConfiguration alloc] initWithColor:color];
+            config.supportsAlpha = NO;
+            picker.configuration = config;
+            [[%c(YTUIUtils) topViewControllerForPresenting] presentViewController:picker animated:YES completion:nil];
+            return YES;
+        }];
+    [sectionItems addObject:liveScrubberColor];
 
     // Scrubber image toggle
     YTSettingsSectionItem *scrubberImageToggle = [YTSettingsSectionItemClass switchItemWithTitle:LOC(@"SCRUBBER_IMAGE")

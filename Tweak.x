@@ -33,8 +33,10 @@
 
 extern BOOL IsEnabled(NSString *key);
 extern NSString *GetScrubberColor();
+extern NSString *GetLiveScrubberColor();
 extern UIImage *GetScrubberImage();
 extern NSString *GetSliderColor();
+extern NSString *GetLiveSliderColor();
 extern int GetSelection(NSString *key);
 
 UIColor *sliderUIColor() {
@@ -42,8 +44,18 @@ UIColor *sliderUIColor() {
     return color ? [UIColor LOT_colorWithHexString:color] : nil;
 }
 
+UIColor *liveSliderUIColor() {
+    NSString *color = GetLiveSliderColor();
+    return color ? [UIColor LOT_colorWithHexString:color] : nil;
+}
+
 UIColor *scrubberUIColor() {
     NSString *color = GetScrubberColor();
+    return color ? [UIColor LOT_colorWithHexString:color] : nil;
+}
+
+UIColor *liveScrubberUIColor() {
+    NSString *color = GetLiveScrubberColor();
     return color ? [UIColor LOT_colorWithHexString:color] : nil;
 }
 
@@ -90,7 +102,8 @@ static void updateScrubberColorAndPosition(UIView *self, BOOL alterScrubber, CGP
         if (IsEnabled(ScrubberImageKey))
             scrubberCircle.backgroundColor = nil;
         else if (IsEnabled(ScrubberImageColorKey)) {
-            UIColor *scrubberColor = scrubberUIColor();
+            BOOL isLive = [self respondsToSelector:@selector(isVideoModeLive)] && [(id)self isVideoModeLive];
+            UIColor *scrubberColor = isLive ? liveScrubberUIColor() : scrubberUIColor();
             if (!scrubberColor) return;
             scrubberCircle.backgroundColor = scrubberColor;
         }
@@ -207,7 +220,8 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 - (void)resetPlayerBarModeColors {
     %orig;
     if (IsEnabled(SliderColorKey)) {
-        UIColor *color = sliderUIColor();
+        BOOL isLive = [self isVideoModeLive];
+        UIColor *color = isLive ? liveSliderUIColor() : sliderUIColor();
         if (!color) return;
         [self setValue:color forKey:@"_progressBarColor"];
         [self setValue:color forKey:@"_userIsScrubbingProgressBarColor"];
@@ -243,7 +257,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
     %orig;
     updateScrubberColorAndPosition(self, YES, CGPointZero);
     if (IsEnabled(SliderColorKey)) {
-        UIColor *color = sliderUIColor();
+        UIColor *color = mode == PLAYER_BAR_MODE_LIVE || mode == PLAYER_BAR_MODE_LIVE_VDR ? liveSliderUIColor() : sliderUIColor();
         if (color) {
             UIView *playingProgress = [self valueForKey:@"_playingProgress"];
             playingProgress.backgroundColor = color;
@@ -331,17 +345,20 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 }
 
 - (void)drawProgressRect:(CGRect)rect withColor:(UIColor *)color {
+    YTIPlayerBarDecorationModel *model = [self valueForKey:@"_model"];
+    BOOL isLive = model.playingState.mode == PLAYER_BAR_MODE_LIVE || model.playingState.mode == PLAYER_BAR_MODE_LIVE_VDR;
+    UIColor *targetColor = IsEnabled(SliderColorKey) ? (isLive ? liveSliderUIColor() : sliderUIColor()) : color;
     if (IsEnabled(AnimatedSliderKey))
         [UIView
             transitionWithView:self
             duration:0.2
             options:UIViewAnimationOptionTransitionCrossDissolve | UIViewAnimationOptionCurveLinear
             animations:^{
-                %orig(rect, IsEnabled(SliderColorKey) ? sliderUIColor() : color);
+                %orig(rect, targetColor);
             }
             completion:nil];
     else
-        %orig(rect, IsEnabled(SliderColorKey) ? sliderUIColor() : color);
+        %orig(rect, targetColor);
 }
 
 %end
