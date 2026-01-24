@@ -1,0 +1,38 @@
+"ENABLED" = "Ativado";
+"ENABLED_DESC" = "É necessário reiniciar a aplicação.";
+
+"SLIDER_COLOR" = "Alterar cor do controlo deslizante";
+"SLIDER_COLOR_DESC" = "Altera a cor do controlo deslizante. Isto também substitui o estilo gradiente do controlo deslizante nas versões recentes do YouTube.";
+"SLIDER_COLOR_VALUE" = "Valor da cor do controlo deslizante";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Valor da cor do controlo deslizante ao vivo";
+
+"SCRUBBER_COLOR" = "Alterar cor do indicador";
+"SCRUBBER_COLOR_DESC" = "Altera a cor do indicador. Isto também pinta toda a imagem personalizada do indicador com a cor especificada.";
+"SCRUBBER_COLOR_VALUE" = "Valor da cor do indicador";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valor da cor do indicador ao vivo";
+
+"SCRUBBER_IMAGE" = "Usar imagem personalizada do indicador";
+"SCRUBBER_IMAGE_DESC" = "Utiliza uma imagem personalizada para o indicador. A imagem substituirá o indicador circular predefinido.";
+
+"IMPORT_IMAGE" = "Importar imagem do indicador";
+"IMPORT_IMAGE_DESC" = "Importa uma imagem para usar como indicador da área de transferência. Para uma experiência ideal, a imagem não deve ser maior que 48px por 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importar esta imagem?";
+"IMPORT_THIS_IMAGE_DESC" = "A imagem será guardada na pasta Documentos da aplicação e usada para o indicador de vídeo.";
+
+"IMAGE_TOO_LARGE" = "Imagem demasiado grande";
+"IMAGE_TOO_LARGE_DESC" = "A imagem é demasiado grande. A imagem não deve ser maior que 48px por 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Ver imagem atual do indicador";
+
+"NO_IMAGE" = "Nenhuma imagem encontrada";
+"NO_IMAGE_DESC" = "Nenhuma imagem foi encontrada na área de transferência. Certifique-se de que uma imagem está copiada para a área de transferência antes de importar.";
+
+"SCRUBBER_SIZE" = "Aumentar tamanho do indicador";
+"SCRUBBER_SIZE_DESC" = "Aumenta o tamanho do indicador. O tamanho do indicador é dimensionado com base no tamanho predefinido. Poderá ter de reiniciar a aplicação para que as alterações tenham efeito.";
+"SCRUBBER_SIZE_DEFAULT" = "Predefinido";
+
+"ANIMATED_SLIDER" = "Animar controlo deslizante e indicador";
+"ANIMATED_SLIDER_DESC" = "Anima o controlo deslizante e o indicador quando o vídeo está a ser reproduzido de forma suave.";

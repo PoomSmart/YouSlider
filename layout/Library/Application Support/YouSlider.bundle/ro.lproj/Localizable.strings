@@ -1,0 +1,38 @@
+"ENABLED" = "Activat";
+"ENABLED_DESC" = "Este necesară repornirea aplicației.";
+
+"SLIDER_COLOR" = "Schimbă culoarea cursorului";
+"SLIDER_COLOR_DESC" = "Schimbă culoarea cursorului. Aceasta înlocuiește și stilul de gradient al cursorului în versiunile recente de YouTube.";
+"SLIDER_COLOR_VALUE" = "Valoarea culorii cursorului";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Valoarea culorii cursorului live";
+
+"SCRUBBER_COLOR" = "Schimbă culoarea indicatorului";
+"SCRUBBER_COLOR_DESC" = "Schimbă culoarea indicatorului. Aceasta pictează și întreaga imagine personalizată a indicatorului cu culoarea specificată.";
+"SCRUBBER_COLOR_VALUE" = "Valoarea culorii indicatorului";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valoarea culorii indicatorului live";
+
+"SCRUBBER_IMAGE" = "Folosește imagine personalizată pentru indicator";
+"SCRUBBER_IMAGE_DESC" = "Folosește o imagine personalizată pentru indicator. Imaginea va înlocui indicatorul circular implicit.";
+
+"IMPORT_IMAGE" = "Importă imagine indicator";
+"IMPORT_IMAGE_DESC" = "Importă o imagine pentru a fi folosită ca indicator din clipboard. Pentru o experiență optimă, imaginea nu ar trebui să fie mai mare de 48px pe 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importă această imagine?";
+"IMPORT_THIS_IMAGE_DESC" = "Imaginea va fi salvată în folderul Documente al aplicației și folosită pentru indicatorul video.";
+
+"IMAGE_TOO_LARGE" = "Imagine prea mare";
+"IMAGE_TOO_LARGE_DESC" = "Imaginea este prea mare. Imaginea nu ar trebui să fie mai mare de 48px pe 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Vizualizează imaginea curentă a indicatorului";
+
+"NO_IMAGE" = "Nicio imagine găsită";
+"NO_IMAGE_DESC" = "Nu a fost găsită nicio imagine în clipboard. Asigură-te că o imagine este copiată în clipboard înainte de import.";
+
+"SCRUBBER_SIZE" = "Mărește dimensiunea indicatorului";
+"SCRUBBER_SIZE_DESC" = "Mărește dimensiunea indicatorului. Dimensiunea indicatorului este scalată pe baza dimensiunii implicite. S-ar putea să fie nevoie să repornești aplicația pentru ca modificările să aibă efect.";
+"SCRUBBER_SIZE_DEFAULT" = "Implicit";
+
+"ANIMATED_SLIDER" = "Animează cursorul și indicatorul";
+"ANIMATED_SLIDER_DESC" = "Animează cursorul și indicatorul când videoclipul este redat fără probleme.";

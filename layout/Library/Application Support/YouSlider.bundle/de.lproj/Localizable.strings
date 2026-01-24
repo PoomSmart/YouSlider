@@ -1,0 +1,38 @@
+"ENABLED" = "Aktiviert";
+"ENABLED_DESC" = "Ein Neustart der App ist erforderlich.";
+
+"SLIDER_COLOR" = "Schiebereglerfarbe ändern";
+"SLIDER_COLOR_DESC" = "Ändert die Farbe des Schiebereglers. Dies ersetzt auch den Verlaufsstil des Schiebereglers für neuere YouTube-Versionen.";
+"SLIDER_COLOR_VALUE" = "Farbwert des Schiebereglers";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Farbwert des Live-Schiebereglers";
+
+"SCRUBBER_COLOR" = "Scrubber-Farbe ändern";
+"SCRUBBER_COLOR_DESC" = "Ändert die Farbe des Scrubbers. Dies färbt auch das gesamte benutzerdefinierte Scrubber-Bild mit der angegebenen Farbe.";
+"SCRUBBER_COLOR_VALUE" = "Farbwert des Scrubbers";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Farbwert des Live-Scrubbers";
+
+"SCRUBBER_IMAGE" = "Benutzerdefiniertes Scrubber-Bild verwenden";
+"SCRUBBER_IMAGE_DESC" = "Verwendet ein benutzerdefiniertes Bild für den Scrubber. Das Bild ersetzt den standardmäßigen kreisförmigen Scrubber.";
+
+"IMPORT_IMAGE" = "Scrubber-Bild importieren";
+"IMPORT_IMAGE_DESC" = "Importiert ein Bild aus der Zwischenablage, um es als Scrubber zu verwenden. Für ein optimales Erlebnis sollte das Bild nicht größer als 48px mal 48px sein.";
+
+"IMPORT_THIS_IMAGE" = "Dieses Bild importieren?";
+"IMPORT_THIS_IMAGE_DESC" = "Das Bild wird im Dokumentenordner der Anwendung gespeichert und für den Video-Scrubber verwendet.";
+
+"IMAGE_TOO_LARGE" = "Bild zu groß";
+"IMAGE_TOO_LARGE_DESC" = "Das Bild ist zu groß. Das Bild sollte nicht größer als 48px mal 48px sein.";
+
+"VIEW_CURRENT_IMAGE" = "Aktuelles Scrubber-Bild anzeigen";
+
+"NO_IMAGE" = "Kein Bild gefunden";
+"NO_IMAGE_DESC" = "In der Zwischenablage wurde kein Bild gefunden. Stellen Sie sicher, dass ein Bild in die Zwischenablage kopiert wurde, bevor Sie es importieren.";
+
+"SCRUBBER_SIZE" = "Scrubber-Größe erhöhen";
+"SCRUBBER_SIZE_DESC" = "Erhöht die Größe des Scrubbers. Die Scrubber-Größe wird basierend auf der Standardgröße skaliert. Möglicherweise müssen Sie die App neu starten, damit die Änderungen wirksam werden.";
+"SCRUBBER_SIZE_DEFAULT" = "Standard";
+
+"ANIMATED_SLIDER" = "Schieberegler und Scrubber animieren";
+"ANIMATED_SLIDER_DESC" = "Animiert den Schieberegler und den Scrubber, wenn das Video reibungslos abgespielt wird.";

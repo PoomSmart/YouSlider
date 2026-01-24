@@ -12,6 +12,8 @@
 #import <YouTubeHeader/YTMainAppVideoPlayerOverlayViewController.h>
 #import <YouTubeHeader/YTPlayerBarController.h>
 #import <YouTubeHeader/YTPlayerBarRectangleDecorationView.h>
+#import <YouTubeHeader/YTPlayerBarScrubberDotDecorationController.h>
+#import <YouTubeHeader/YTPlayerBarScrubberDotDecorationView.h>
 #import <YouTubeHeader/YTPlayerBarSegmentView.h>
 #import <YouTubeHeader/YTSegmentableInlinePlayerBarView.h>
 #import "Settings.h"
@@ -75,10 +77,10 @@ static void updateScrubberSize(UIView *scrubberCircle, CGFloat scale) {
         scrubberCircle.layer.cornerRadius = size / 2;
 }
 
-static void initScrubberCircle(UIView *self, BOOL setColor) {
+static void initScrubberCircleBase(UIView *scrubberCircle, BOOL setColor) {
+    if (scrubberCircle == nil) return;
     CGFloat scrubberScale = getBaseScrubberScale();
     if (scrubberScale == -1) return;
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
     updateScrubberSize(scrubberCircle, scrubberScale);
     if (setColor) {
         if (IsEnabled(ScrubberImageKey))
@@ -91,6 +93,10 @@ static void initScrubberCircle(UIView *self, BOOL setColor) {
     }
 }
 
+static void initScrubberCircle(UIView *self, BOOL setColor) {
+    initScrubberCircleBase([self valueForKey:@"_scrubberCircle"], setColor);
+}
+
 static CGPoint getScrubberCircleCenter(UIView *self) {
     UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
     return scrubberCircle.center;
@@ -98,6 +104,7 @@ static CGPoint getScrubberCircleCenter(UIView *self) {
 
 static void updateScrubberColorAndPosition(UIView *self, BOOL alterScrubber, CGPoint originalCenter) {
     UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    if (scrubberCircle == nil) return;
     if (alterScrubber) {
         if (IsEnabled(ScrubberImageKey))
             scrubberCircle.backgroundColor = nil;
@@ -121,10 +128,11 @@ static CGFloat getScrubberScale(CGFloat scale) {
     return scale / YOUTUBE_SCRUBBER_SCALE + 0.00001;
 }
 
-static void setTweakCustomScrubberIcon(id self_) {
+static void setTweakCustomScrubberIcon(id self_, UIView *scrubberCircle) {
     YTModularPlayerBarView *self = self_;
     UIImageView *imageView = self.tweakCustomScrubberImageView;
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    if (scrubberCircle == nil)
+        scrubberCircle = [self valueForKey:@"_scrubberCircle"];
     if (IsEnabled(ScrubberImageKey)) {
         UIImage *image = GetScrubberImage();
         if (!image) return;
@@ -146,8 +154,18 @@ static void setTweakCustomScrubberIcon(id self_) {
 static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController *self) {
     YTInlinePlayerBarContainerView *playerBar = self.playerBarController.playerBar;
     id view;
-    if ([playerBar respondsToSelector:@selector(modularPlayerBar)])
+    if ([playerBar respondsToSelector:@selector(modularPlayerBar)]) {
         view = playerBar.modularPlayerBar.view;
+        @try {
+            YTPlayerBarScrubberDotDecorationController *scrubberDotDecorationController = [playerBar valueForKey:@"_scrubberDotDecorationController"];
+            if (scrubberDotDecorationController) {
+                YTPlayerBarScrubberDotDecorationView *scrubberDotDecorationView = [scrubberDotDecorationController scrubberDot];
+                UIView *scrubberCircle = scrubberDotDecorationView.scrubberDot;
+                setTweakCustomScrubberIcon(view, scrubberCircle);
+                return;
+            }
+        } @catch (id ex) {}
+    }
     else if ([playerBar respondsToSelector:@selector(segmentablePlayerBar)] && playerBar.segmentablePlayerBar) {
         id segmentablePlayerBar = playerBar.segmentablePlayerBar;
         if ([segmentablePlayerBar isKindOfClass:%c(YTModularPlayerBarController)])
@@ -156,7 +174,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
             view = segmentablePlayerBar; // YTSegmentableInlinePlayerBarView
     } else
         view = playerBar.playerBar;
-    setTweakCustomScrubberIcon(view);
+    setTweakCustomScrubberIcon(view, nil);
 }
 
 %hook YTModularPlayerBarView
@@ -181,10 +199,12 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 
 - (void)maybeSetDefaultScrubberBackgroundColor {
     %orig;
+    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    if (IsEnabled(ScrubberImageKey))
+        scrubberCircle.backgroundColor = [UIColor clearColor];
     if (IsEnabled(ScrubberImageColorKey)) {
         UIColor *scrubberColor = scrubberUIColor();
         if (!scrubberColor) return;
-        UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
         scrubberCircle.backgroundColor = scrubberColor;
     }
 }
@@ -359,6 +379,56 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
             completion:nil];
     else
         %orig(rect, targetColor);
+}
+
+%end
+
+%hook YTInlinePlayerBarContainerView
+
+- (void)setCustomScrubberIcon:(UIImage *)image {
+    if (IsEnabled(ScrubberImageKey)) return;
+    %orig;
+}
+
+%end
+
+%hook YTPlayerBarScrubberDotDecorationView
+
+- (id)initWithModel:(id)model {
+    self = %orig;
+    if (self) {
+        UIView *scrubberCircle = [self valueForKey:@"_defaultScrubberDot"];
+        initScrubberCircleBase(scrubberCircle, YES);
+    }
+    return self;
+}
+
+- (UIView *)expectedScrubberDot {
+    UIView *scrubberCircle = [self valueForKey:@"_defaultScrubberDot"];
+    if (IsEnabled(ScrubberImageColorKey)) {
+        UIColor *scrubberColor = scrubberUIColor();
+        if (!scrubberColor) return scrubberCircle;;
+        scrubberCircle.backgroundColor = scrubberColor;
+    }
+    return scrubberCircle;
+}
+
+- (void)transformScrubberScale:(CGFloat)scale {
+    %orig(getScrubberScale(scale));
+}
+
+- (void)setCustomImageScrubberIcon:(UIImage *)image {
+    if (IsEnabled(ScrubberImageKey)) return;
+    %orig;
+}
+
+- (void)updateFrameWithPlayerBarFrame:(CGRect)frame {
+    if (IsEnabled(AnimatedSliderKey))
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            %orig;
+        } completion:nil];
+    else
+        %orig;
 }
 
 %end

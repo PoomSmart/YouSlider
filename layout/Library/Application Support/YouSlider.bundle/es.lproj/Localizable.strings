@@ -1,0 +1,38 @@
+"ENABLED" = "Habilitado";
+"ENABLED_DESC" = "Se requiere reiniciar la aplicación.";
+
+"SLIDER_COLOR" = "Cambiar color del control deslizante";
+"SLIDER_COLOR_DESC" = "Cambia el color del control deslizante. Esto también reemplaza el estilo degradado del control deslizante en las versiones recientes de YouTube.";
+"SLIDER_COLOR_VALUE" = "Valor de color del control deslizante";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Valor de color del control deslizante en vivo";
+
+"SCRUBBER_COLOR" = "Cambiar color del indicador";
+"SCRUBBER_COLOR_DESC" = "Cambia el color del indicador. Esto también pinta toda la imagen personalizada del indicador con el color especificado.";
+"SCRUBBER_COLOR_VALUE" = "Valor de color del indicador";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valor de color del indicador en vivo";
+
+"SCRUBBER_IMAGE" = "Usar imagen personalizada del indicador";
+"SCRUBBER_IMAGE_DESC" = "Usa una imagen personalizada para el indicador. La imagen reemplazará el indicador circular predeterminado.";
+
+"IMPORT_IMAGE" = "Importar imagen del indicador";
+"IMPORT_IMAGE_DESC" = "Importa una imagen desde el portapapeles para usar como indicador. Para una experiencia óptima, la imagen no debe ser mayor de 48px por 48px.";
+
+"IMPORT_THIS_IMAGE" = "¿Importar esta imagen?";
+"IMPORT_THIS_IMAGE_DESC" = "La imagen se guardará en la carpeta de Documentos de la aplicación y se usará para el indicador de vídeo.";
+
+"IMAGE_TOO_LARGE" = "Imagen demasiado grande";
+"IMAGE_TOO_LARGE_DESC" = "La imagen es demasiado grande. La imagen no debe ser mayor de 48px por 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Ver imagen actual del indicador";
+
+"NO_IMAGE" = "No se encontró ninguna imagen";
+"NO_IMAGE_DESC" = "No se encontró ninguna imagen en el portapapeles. Asegúrate de que una imagen esté copiada en el portapapeles antes de importar.";
+
+"SCRUBBER_SIZE" = "Aumentar tamaño del indicador";
+"SCRUBBER_SIZE_DESC" = "Aumenta el tamaño del indicador. El tamaño del indicador se escala según el tamaño predeterminado. Es posible que debas reiniciar la aplicación para que los cambios surtan efecto.";
+"SCRUBBER_SIZE_DEFAULT" = "Predeterminado";
+
+"ANIMATED_SLIDER" = "Animar control deslizante e indicador";
+"ANIMATED_SLIDER_DESC" = "Anima el control deslizante y el indicador cuando el vídeo se reproduce sin problemas.";

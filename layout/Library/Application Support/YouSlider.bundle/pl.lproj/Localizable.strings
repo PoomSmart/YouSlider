@@ -1,0 +1,38 @@
+"ENABLED" = "Włączone";
+"ENABLED_DESC" = "Wymagane jest ponowne uruchomienie aplikacji.";
+
+"SLIDER_COLOR" = "Zmień kolor suwaka";
+"SLIDER_COLOR_DESC" = "Zmienia kolor suwaka. Zastępuje to również styl gradientu suwaka w najnowszych wersjach YouTube.";
+"SLIDER_COLOR_VALUE" = "Wartość koloru suwaka";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Wartość koloru suwaka na żywo";
+
+"SCRUBBER_COLOR" = "Zmień kolor wskaźnika";
+"SCRUBBER_COLOR_DESC" = "Zmienia kolor wskaźnika. Maluje to również cały niestandardowy obraz wskaźnika określonym kolorem.";
+"SCRUBBER_COLOR_VALUE" = "Wartość koloru wskaźnika";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Wartość koloru wskaźnika na żywo";
+
+"SCRUBBER_IMAGE" = "Użyj niestandardowego obrazu wskaźnika";
+"SCRUBBER_IMAGE_DESC" = "Użyj niestandardowego obrazu dla wskaźnika. Obraz zastąpi domyślny okrągły wskaźnik.";
+
+"IMPORT_IMAGE" = "Importuj obraz wskaźnika";
+"IMPORT_IMAGE_DESC" = "Importuj obraz do użycia jako wskaźnik ze schowka. Aby uzyskać optymalne wrażenia, obraz nie powinien być większy niż 48px na 48px.";
+
+"IMPORT_THIS_IMAGE" = "Zaimportować ten obraz?";
+"IMPORT_THIS_IMAGE_DESC" = "Obraz zostanie zapisany w folderze Dokumenty aplikacji i użyty dla wskaźnika wideo.";
+
+"IMAGE_TOO_LARGE" = "Obraz za duży";
+"IMAGE_TOO_LARGE_DESC" = "Obraz jest za duży. Obraz nie powinien być większy niż 48px na 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Zobacz aktualny obraz wskaźnika";
+
+"NO_IMAGE" = "Nie znaleziono obrazu";
+"NO_IMAGE_DESC" = "Nie znaleziono obrazu w schowku. Upewnij się, że obraz został skopiowany do schowka przed importowaniem.";
+
+"SCRUBBER_SIZE" = "Zwiększ rozmiar wskaźnika";
+"SCRUBBER_SIZE_DESC" = "Zwiększa rozmiar wskaźnika. Rozmiar wskaźnika jest skalowany na podstawie domyślnego rozmiaru wskaźnika. Może być konieczne ponowne uruchomienie aplikacji, aby zmiany zaczęły obowiązywać.";
+"SCRUBBER_SIZE_DEFAULT" = "Domyślny";
+
+"ANIMATED_SLIDER" = "Animuj suwak i wskaźnik";
+"ANIMATED_SLIDER_DESC" = "Animuje suwak i wskaźnik, gdy wideo jest odtwarzane płynnie.";

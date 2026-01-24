@@ -1,0 +1,38 @@
+"ENABLED" = "Abilitato";
+"ENABLED_DESC" = "È necessario riavviare l'app.";
+
+"SLIDER_COLOR" = "Cambia colore del cursore";
+"SLIDER_COLOR_DESC" = "Modifica il colore del cursore. Questo sostituisce anche lo stile sfumato del cursore per le versioni recenti di YouTube.";
+"SLIDER_COLOR_VALUE" = "Valore colore del cursore";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Valore colore del cursore live";
+
+"SCRUBBER_COLOR" = "Cambia colore dell'indicatore";
+"SCRUBBER_COLOR_DESC" = "Modifica il colore dell'indicatore. Questo colora anche l'intera immagine personalizzata dell'indicatore con il colore specificato.";
+"SCRUBBER_COLOR_VALUE" = "Valore colore dell'indicatore";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valore colore dell'indicatore live";
+
+"SCRUBBER_IMAGE" = "Usa immagine personalizzata dell'indicatore";
+"SCRUBBER_IMAGE_DESC" = "Utilizza un'immagine personalizzata per l'indicatore. L'immagine sostituirà l'indicatore circolare predefinito.";
+
+"IMPORT_IMAGE" = "Importa immagine dell'indicatore";
+"IMPORT_IMAGE_DESC" = "Importa un'immagine da utilizzare come indicatore dagli appunti. Per un'esperienza ottimale, l'immagine non deve essere più grande di 48px per 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importare questa immagine?";
+"IMPORT_THIS_IMAGE_DESC" = "L'immagine verrà salvata nella cartella Documenti dell'applicazione e utilizzata per l'indicatore video.";
+
+"IMAGE_TOO_LARGE" = "Immagine troppo grande";
+"IMAGE_TOO_LARGE_DESC" = "L'immagine è troppo grande. L'immagine non deve essere più grande di 48px per 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Visualizza immagine corrente dell'indicatore";
+
+"NO_IMAGE" = "Nessuna immagine trovata";
+"NO_IMAGE_DESC" = "Nessuna immagine è stata trovata negli appunti. Assicurati che un'immagine sia copiata negli appunti prima di importare.";
+
+"SCRUBBER_SIZE" = "Aumenta dimensione dell'indicatore";
+"SCRUBBER_SIZE_DESC" = "Aumenta la dimensione dell'indicatore. La dimensione dell'indicatore viene ridimensionata in base alla dimensione predefinita. Potrebbe essere necessario riavviare l'app affinché le modifiche abbiano effetto.";
+"SCRUBBER_SIZE_DEFAULT" = "Predefinito";
+
+"ANIMATED_SLIDER" = "Anima cursore e indicatore";
+"ANIMATED_SLIDER_DESC" = "Anima il cursore e l'indicatore quando il video viene riprodotto in modo fluido.";

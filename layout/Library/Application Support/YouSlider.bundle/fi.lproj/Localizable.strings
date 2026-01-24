@@ -1,0 +1,38 @@
+"ENABLED" = "Käytössä";
+"ENABLED_DESC" = "Sovelluksen uudelleenkäynnistys vaaditaan.";
+
+"SLIDER_COLOR" = "Vaihda liukusäätimen väri";
+"SLIDER_COLOR_DESC" = "Muuttaa liukusäätimen värin. Tämä korvaa myös liukusäätimen liukuvärityylin uusimmissa YouTube-versioissa.";
+"SLIDER_COLOR_VALUE" = "Liukusäätimen väriarvo";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Suoran liukusäätimen väriarvo";
+
+"SCRUBBER_COLOR" = "Vaihda scrubber väri";
+"SCRUBBER_COLOR_DESC" = "Muuttaa scrubberin värin. Tämä maalaa myös koko mukautetun scrubberkuvan määritetyllä värillä.";
+"SCRUBBER_COLOR_VALUE" = "Scrubber väriarvo";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Suoran scrubberin väriarvo";
+
+"SCRUBBER_IMAGE" = "Käytä mukautettua scrubberkuvaa";
+"SCRUBBER_IMAGE_DESC" = "Käytä mukautettua kuvaa scrubberille. Kuva korvaa oletusympyräscrubberin.";
+
+"IMPORT_IMAGE" = "Tuo scrubberkuva";
+"IMPORT_IMAGE_DESC" = "Tuo kuva käytettäväksi scrubberina leikepöydältä. Parhaan kokemuksen saavuttamiseksi kuvan ei tulisi olla suurempi kuin 48px kertaa 48px.";
+
+"IMPORT_THIS_IMAGE" = "Tuodaanko tämä kuva?";
+"IMPORT_THIS_IMAGE_DESC" = "Kuva tallennetaan sovelluksen Dokumentit-kansioon ja käytetään videoscrubberille.";
+
+"IMAGE_TOO_LARGE" = "Kuva liian suuri";
+"IMAGE_TOO_LARGE_DESC" = "Kuva on liian suuri. Kuvan ei tulisi olla suurempi kuin 48px kertaa 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Näytä nykyinen scrubberkuva";
+
+"NO_IMAGE" = "Kuvaa ei löytynyt";
+"NO_IMAGE_DESC" = "Leikepöydältä ei löytynyt kuvaa. Varmista, että kuva on kopioitu leikepöydälle ennen tuontia.";
+
+"SCRUBBER_SIZE" = "Suurenna scrubberin kokoa";
+"SCRUBBER_SIZE_DESC" = "Suurentaa scrubberin kokoa. Scrubberin koko skaalataan oletusscrubberin koon perusteella. Saatat joutua käynnistämään sovelluksen uudelleen, jotta muutokset tulevat voimaan.";
+"SCRUBBER_SIZE_DEFAULT" = "Oletus";
+
+"ANIMATED_SLIDER" = "Animoi liukusäädin ja scrubber";
+"ANIMATED_SLIDER_DESC" = "Animoi liukusäädin ja scrubber, kun video toistetaan sujuvasti.";

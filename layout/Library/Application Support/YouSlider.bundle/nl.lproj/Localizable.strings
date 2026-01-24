@@ -1,0 +1,38 @@
+"ENABLED" = "Ingeschakeld";
+"ENABLED_DESC" = "Opnieuw opstarten van de app is vereist.";
+
+"SLIDER_COLOR" = "Schuifkleur wijzigen";
+"SLIDER_COLOR_DESC" = "Wijzigt de kleur van de schuif. Dit vervangt ook de verloopstijl van de schuif voor recente YouTube-versies.";
+"SLIDER_COLOR_VALUE" = "Schuifkleurwaarde";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Live schuifkleurwaarde";
+
+"SCRUBBER_COLOR" = "Scrubberkleur wijzigen";
+"SCRUBBER_COLOR_DESC" = "Wijzigt de kleur van de scrubber. Dit kleurt ook de volledige aangepaste scrubberafbeelding met de opgegeven kleur.";
+"SCRUBBER_COLOR_VALUE" = "Scrubberkleurwaarde";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubberkleurwaarde";
+
+"SCRUBBER_IMAGE" = "Aangepaste scrubberafbeelding gebruiken";
+"SCRUBBER_IMAGE_DESC" = "Gebruik een aangepaste afbeelding voor de scrubber. De afbeelding vervangt de standaard ronde scrubber.";
+
+"IMPORT_IMAGE" = "Scrubberafbeelding importeren";
+"IMPORT_IMAGE_DESC" = "Importeer een afbeelding om als scrubber te gebruiken vanaf het klembord. Voor de beste ervaring mag de afbeelding niet groter zijn dan 48px bij 48px.";
+
+"IMPORT_THIS_IMAGE" = "Deze afbeelding importeren?";
+"IMPORT_THIS_IMAGE_DESC" = "De afbeelding wordt opgeslagen in de map Documenten van de applicatie en gebruikt voor de videoscrubber.";
+
+"IMAGE_TOO_LARGE" = "Afbeelding te groot";
+"IMAGE_TOO_LARGE_DESC" = "De afbeelding is te groot. De afbeelding mag niet groter zijn dan 48px bij 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Huidige scrubberafbeelding bekijken";
+
+"NO_IMAGE" = "Geen afbeelding gevonden";
+"NO_IMAGE_DESC" = "Er is geen afbeelding gevonden op het klembord. Zorg ervoor dat een afbeelding naar het klembord is gekopieerd voordat u importeert.";
+
+"SCRUBBER_SIZE" = "Scrubbergrootte vergroten";
+"SCRUBBER_SIZE_DESC" = "Vergroot de grootte van de scrubber. De scrubbergrootte wordt geschaald op basis van de standaard scrubbergrootte. Mogelijk moet u de app opnieuw opstarten om de wijzigingen door te voeren.";
+"SCRUBBER_SIZE_DEFAULT" = "Standaard";
+
+"ANIMATED_SLIDER" = "Schuif en scrubber animeren";
+"ANIMATED_SLIDER_DESC" = "Animeert de schuif en scrubber wanneer de video soepel wordt afgespeeld.";

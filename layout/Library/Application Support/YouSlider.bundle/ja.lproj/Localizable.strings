@@ -1,0 +1,38 @@
+"ENABLED" = "有効";
+"ENABLED_DESC" = "アプリの再起動が必要です。";
+
+"SLIDER_COLOR" = "スライダーの色を変更";
+"SLIDER_COLOR_DESC" = "スライダーの色を変更します。これにより、最近のYouTubeバージョンのスライダーのグラデーションスタイルも置き換えられます。";
+"SLIDER_COLOR_VALUE" = "スライダーの色の値";
+
+"LIVE_SLIDER_COLOR_VALUE" = "ライブスライダーの色の値";
+
+"SCRUBBER_COLOR" = "スクラバーの色を変更";
+"SCRUBBER_COLOR_DESC" = "スクラバーの色を変更します。これにより、カスタムスクラバー画像全体が指定された色で塗りつぶされます。";
+"SCRUBBER_COLOR_VALUE" = "スクラバーの色の値";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "ライブスクラバーの色の値";
+
+"SCRUBBER_IMAGE" = "カスタムスクラバー画像を使用";
+"SCRUBBER_IMAGE_DESC" = "スクラバーにカスタム画像を使用します。画像はデフォルトの円形スクラバーを置き換えます。";
+
+"IMPORT_IMAGE" = "スクラバー画像をインポート";
+"IMPORT_IMAGE_DESC" = "クリップボードからスクラバーとして使用する画像をインポートします。最適な体験のために、画像は48px×48pxを超えないようにしてください。";
+
+"IMPORT_THIS_IMAGE" = "この画像をインポートしますか？";
+"IMPORT_THIS_IMAGE_DESC" = "画像はアプリケーションのDocumentsフォルダに保存され、ビデオスクラバーに使用されます。";
+
+"IMAGE_TOO_LARGE" = "画像が大きすぎます";
+"IMAGE_TOO_LARGE_DESC" = "画像が大きすぎます。画像は48px×48pxを超えないようにしてください。";
+
+"VIEW_CURRENT_IMAGE" = "現在のスクラバー画像を表示";
+
+"NO_IMAGE" = "画像が見つかりません";
+"NO_IMAGE_DESC" = "クリップボードに画像が見つかりませんでした。インポートする前に画像がクリップボードにコピーされていることを確認してください。";
+
+"SCRUBBER_SIZE" = "スクラバーのサイズを増やす";
+"SCRUBBER_SIZE_DESC" = "スクラバーのサイズを増やします。スクラバーのサイズはデフォルトのスクラバーサイズに基づいてスケーリングされます。変更を有効にするには、アプリを再起動する必要がある場合があります。";
+"SCRUBBER_SIZE_DEFAULT" = "デフォルト";
+
+"ANIMATED_SLIDER" = "スライダーとスクラバーをアニメーション化";
+"ANIMATED_SLIDER_DESC" = "ビデオがスムーズに再生されているときにスライダーとスクラバーをアニメーション化します。";

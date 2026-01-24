@@ -1,0 +1,38 @@
+"ENABLED" = "Didayakan";
+"ENABLED_DESC" = "Mula semula aplikasi diperlukan.";
+
+"SLIDER_COLOR" = "Tukar warna peluncur";
+"SLIDER_COLOR_DESC" = "Menukar warna peluncur. Ini juga menggantikan gaya kecerunan peluncur untuk versi YouTube terkini.";
+"SLIDER_COLOR_VALUE" = "Nilai warna peluncur";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Nilai warna peluncur langsung";
+
+"SCRUBBER_COLOR" = "Tukar warna scrubber";
+"SCRUBBER_COLOR_DESC" = "Menukar warna scrubber. Ini juga mewarnakan keseluruhan imej scrubber tersuai dengan warna yang ditentukan.";
+"SCRUBBER_COLOR_VALUE" = "Nilai warna scrubber";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Nilai warna scrubber langsung";
+
+"SCRUBBER_IMAGE" = "Gunakan imej scrubber tersuai";
+"SCRUBBER_IMAGE_DESC" = "Gunakan imej tersuai untuk scrubber. Imej akan menggantikan scrubber bulat lalai.";
+
+"IMPORT_IMAGE" = "Import imej scrubber";
+"IMPORT_IMAGE_DESC" = "Import imej untuk digunakan sebagai scrubber dari papan klip. Untuk pengalaman optimum, imej tidak seharusnya lebih besar daripada 48px kali 48px.";
+
+"IMPORT_THIS_IMAGE" = "Import imej ini?";
+"IMPORT_THIS_IMAGE_DESC" = "Imej akan disimpan ke folder Dokumen aplikasi dan digunakan untuk scrubber video.";
+
+"IMAGE_TOO_LARGE" = "Imej terlalu besar";
+"IMAGE_TOO_LARGE_DESC" = "Imej terlalu besar. Imej tidak seharusnya lebih besar daripada 48px kali 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Lihat imej scrubber semasa";
+
+"NO_IMAGE" = "Tiada imej dijumpai";
+"NO_IMAGE_DESC" = "Tiada imej dijumpai dalam papan klip. Pastikan imej disalin ke papan klip sebelum mengimport.";
+
+"SCRUBBER_SIZE" = "Tingkatkan saiz scrubber";
+"SCRUBBER_SIZE_DESC" = "Meningkatkan saiz scrubber. Saiz scrubber diskala berdasarkan saiz scrubber lalai. Anda mungkin perlu memulakan semula aplikasi untuk perubahan berkuat kuasa.";
+"SCRUBBER_SIZE_DEFAULT" = "Lalai";
+
+"ANIMATED_SLIDER" = "Animasikan peluncur dan scrubber";
+"ANIMATED_SLIDER_DESC" = "Menganimasikan peluncur dan scrubber apabila video dimainkan dengan lancar.";

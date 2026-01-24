@@ -1,0 +1,38 @@
+"ENABLED" = "Aktivert";
+"ENABLED_DESC" = "Omstart av appen er nødvendig.";
+
+"SLIDER_COLOR" = "Endre glidebryter farge";
+"SLIDER_COLOR_DESC" = "Endrer fargen på glidebryteren. Dette erstatter også gradientstilen for glidebryteren i nyere YouTube-versjoner.";
+"SLIDER_COLOR_VALUE" = "Glidebryter fargeverdi";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Direkte glidebryter fargeverdi";
+
+"SCRUBBER_COLOR" = "Endre scrubber farge";
+"SCRUBBER_COLOR_DESC" = "Endrer fargen på scrubberen. Dette maler også hele det tilpassede scrubberbildet med den angitte fargen.";
+"SCRUBBER_COLOR_VALUE" = "Scrubber fargeverdi";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Direkte scrubber fargeverdi";
+
+"SCRUBBER_IMAGE" = "Bruk tilpasset scrubberbilde";
+"SCRUBBER_IMAGE_DESC" = "Bruk et tilpasset bilde for scrubberen. Bildet vil erstatte standard sirkulær scrubber.";
+
+"IMPORT_IMAGE" = "Importer scrubberbilde";
+"IMPORT_IMAGE_DESC" = "Importer et bilde å bruke som scrubber fra utklippstavlen. For best opplevelse bør bildet ikke være større enn 48px ganger 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importer dette bildet?";
+"IMPORT_THIS_IMAGE_DESC" = "Bildet vil bli lagret i applikasjonens Dokumenter-mappe og brukt for videoscrubberen.";
+
+"IMAGE_TOO_LARGE" = "Bildet er for stort";
+"IMAGE_TOO_LARGE_DESC" = "Bildet er for stort. Bildet bør ikke være større enn 48px ganger 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Vis gjeldende scrubberbilde";
+
+"NO_IMAGE" = "Ingen bilde funnet";
+"NO_IMAGE_DESC" = "Ingen bilde ble funnet i utklippstavlen. Sørg for at et bilde kopieres til utklippstavlen før import.";
+
+"SCRUBBER_SIZE" = "Øk scrubber størrelse";
+"SCRUBBER_SIZE_DESC" = "Øker størrelsen på scrubberen. Scrubberstørrelsen skaleres basert på standardstørrelsen. Du må kanskje starte appen på nytt for at endringene skal tre i kraft.";
+"SCRUBBER_SIZE_DEFAULT" = "Standard";
+
+"ANIMATED_SLIDER" = "Animer glidebryter og scrubber";
+"ANIMATED_SLIDER_DESC" = "Animerer glidebryteren og scrubberen når videoen spilles jevnt.";

@@ -1,0 +1,38 @@
+"ENABLED" = "활성화됨";
+"ENABLED_DESC" = "앱을 재시작해야 합니다.";
+
+"SLIDER_COLOR" = "슬라이더 색상 변경";
+"SLIDER_COLOR_DESC" = "슬라이더의 색상을 변경합니다. 이는 최근 YouTube 버전의 슬라이더 그라데이션 스타일도 대체합니다.";
+"SLIDER_COLOR_VALUE" = "슬라이더 색상 값";
+
+"LIVE_SLIDER_COLOR_VALUE" = "라이브 슬라이더 색상 값";
+
+"SCRUBBER_COLOR" = "스크러버 색상 변경";
+"SCRUBBER_COLOR_DESC" = "스크러버의 색상을 변경합니다. 이는 전체 사용자 정의 스크러버 이미지를 지정된 색상으로 칠합니다.";
+"SCRUBBER_COLOR_VALUE" = "스크러버 색상 값";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "라이브 스크러버 색상 값";
+
+"SCRUBBER_IMAGE" = "사용자 정의 스크러버 이미지 사용";
+"SCRUBBER_IMAGE_DESC" = "스크러버에 사용자 정의 이미지를 사용합니다. 이미지는 기본 원형 스크러버를 대체합니다.";
+
+"IMPORT_IMAGE" = "스크러버 이미지 가져오기";
+"IMPORT_IMAGE_DESC" = "클립보드에서 스크러버로 사용할 이미지를 가져옵니다. 최적의 경험을 위해 이미지는 48px x 48px보다 크지 않아야 합니다.";
+
+"IMPORT_THIS_IMAGE" = "이 이미지를 가져오시겠습니까?";
+"IMPORT_THIS_IMAGE_DESC" = "이미지는 애플리케이션 Documents 폴더에 저장되고 비디오 스크러버에 사용됩니다.";
+
+"IMAGE_TOO_LARGE" = "이미지가 너무 큽니다";
+"IMAGE_TOO_LARGE_DESC" = "이미지가 너무 큽니다. 이미지는 48px x 48px보다 크지 않아야 합니다.";
+
+"VIEW_CURRENT_IMAGE" = "현재 스크러버 이미지 보기";
+
+"NO_IMAGE" = "이미지를 찾을 수 없습니다";
+"NO_IMAGE_DESC" = "클립보드에서 이미지를 찾을 수 없습니다. 가져오기 전에 이미지가 클립보드에 복사되었는지 확인하세요.";
+
+"SCRUBBER_SIZE" = "스크러버 크기 증가";
+"SCRUBBER_SIZE_DESC" = "스크러버의 크기를 증가시킵니다. 스크러버 크기는 기본 스크러버 크기를 기준으로 조정됩니다. 변경 사항을 적용하려면 앱을 재시작해야 할 수 있습니다.";
+"SCRUBBER_SIZE_DEFAULT" = "기본값";
+
+"ANIMATED_SLIDER" = "슬라이더 및 스크러버 애니메이션";
+"ANIMATED_SLIDER_DESC" = "비디오가 부드럽게 재생될 때 슬라이더와 스크러버를 애니메이션합니다.";

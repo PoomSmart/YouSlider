@@ -1,0 +1,38 @@
+"ENABLED" = "Aktiverad";
+"ENABLED_DESC" = "Omstart av appen krävs.";
+
+"SLIDER_COLOR" = "Ändra skjutreglage färg";
+"SLIDER_COLOR_DESC" = "Ändrar färgen på skjutreglaget. Detta ersätter också gradientstilen för skjutreglaget i de senaste YouTube-versionerna.";
+"SLIDER_COLOR_VALUE" = "Skjutreglage färgvärde";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Live skjutreglage färgvärde";
+
+"SCRUBBER_COLOR" = "Ändra scrubber färg";
+"SCRUBBER_COLOR_DESC" = "Ändrar färgen på scrubbern. Detta målar också hela den anpassade scrubberbilden med den angivna färgen.";
+"SCRUBBER_COLOR_VALUE" = "Scrubber färgvärde";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubber färgvärde";
+
+"SCRUBBER_IMAGE" = "Använd anpassad scrubberbild";
+"SCRUBBER_IMAGE_DESC" = "Använd en anpassad bild för scrubbern. Bilden kommer att ersätta den cirkulära standardscrubbern.";
+
+"IMPORT_IMAGE" = "Importera scrubberbild";
+"IMPORT_IMAGE_DESC" = "Importera en bild att använda som scrubber från urklipp. För bästa upplevelse bör bilden inte vara större än 48px gånger 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importera denna bild?";
+"IMPORT_THIS_IMAGE_DESC" = "Bilden kommer att sparas i applikationens Dokumentmapp och användas för videoscrubbern.";
+
+"IMAGE_TOO_LARGE" = "Bilden är för stor";
+"IMAGE_TOO_LARGE_DESC" = "Bilden är för stor. Bilden bör inte vara större än 48px gånger 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Visa aktuell scrubberbild";
+
+"NO_IMAGE" = "Ingen bild hittades";
+"NO_IMAGE_DESC" = "Ingen bild hittades i urklipp. Se till att en bild kopieras till urklipp innan import.";
+
+"SCRUBBER_SIZE" = "Öka scrubber storlek";
+"SCRUBBER_SIZE_DESC" = "Ökar storleken på scrubbern. Scrubberstorleken skalas baserat på standardstorleken. Du kan behöva starta om appen för att ändringarna ska träda i kraft.";
+"SCRUBBER_SIZE_DEFAULT" = "Standard";
+
+"ANIMATED_SLIDER" = "Animera skjutreglage och scrubber";
+"ANIMATED_SLIDER_DESC" = "Animerar skjutreglaget och scrubbern när videon spelas smidigt.";

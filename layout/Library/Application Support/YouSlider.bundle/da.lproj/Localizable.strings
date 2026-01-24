@@ -1,0 +1,38 @@
+"ENABLED" = "Aktiveret";
+"ENABLED_DESC" = "Genstart af app er påkrævet.";
+
+"SLIDER_COLOR" = "Skift skyder farve";
+"SLIDER_COLOR_DESC" = "Ændrer farven på skyderen. Dette erstatter også gradientstilen for skyderen i nyere YouTube-versioner.";
+"SLIDER_COLOR_VALUE" = "Skyder farveværdi";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Live skyder farveværdi";
+
+"SCRUBBER_COLOR" = "Skift scrubber farve";
+"SCRUBBER_COLOR_DESC" = "Ændrer farven på scrubberen. Dette maler også hele det tilpassede scrubberbillede med den angivne farve.";
+"SCRUBBER_COLOR_VALUE" = "Scrubber farveværdi";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubber farveværdi";
+
+"SCRUBBER_IMAGE" = "Brug tilpasset scrubberbillede";
+"SCRUBBER_IMAGE_DESC" = "Brug et tilpasset billede til scrubberen. Billedet vil erstatte standard cirkulær scrubber.";
+
+"IMPORT_IMAGE" = "Importér scrubberbillede";
+"IMPORT_IMAGE_DESC" = "Importér et billede til brug som scrubber fra udklipsholderen. For den bedste oplevelse bør billedet ikke være større end 48px gange 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importér dette billede?";
+"IMPORT_THIS_IMAGE_DESC" = "Billedet gemmes i applikationens Dokumenter-mappe og bruges til videoscrubberen.";
+
+"IMAGE_TOO_LARGE" = "Billede for stort";
+"IMAGE_TOO_LARGE_DESC" = "Billedet er for stort. Billedet bør ikke være større end 48px gange 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Vis nuværende scrubberbillede";
+
+"NO_IMAGE" = "Intet billede fundet";
+"NO_IMAGE_DESC" = "Intet billede blev fundet i udklipsholderen. Sørg for, at et billede kopieres til udklipsholderen før import.";
+
+"SCRUBBER_SIZE" = "Forøg scrubber størrelse";
+"SCRUBBER_SIZE_DESC" = "Forøger størrelsen på scrubberen. Scrubberstørrelsen skaleres baseret på standardstørrelsen. Du skal muligvis genstarte appen for at ændringerne træder i kraft.";
+"SCRUBBER_SIZE_DEFAULT" = "Standard";
+
+"ANIMATED_SLIDER" = "Animér skyder og scrubber";
+"ANIMATED_SLIDER_DESC" = "Animerer skyderen og scrubberen, når videoen afspilles jævnt.";

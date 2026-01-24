@@ -1,0 +1,38 @@
+"ENABLED" = "已启用";
+"ENABLED_DESC" = "需要重启应用。";
+
+"SLIDER_COLOR" = "更改滑块颜色";
+"SLIDER_COLOR_DESC" = "更改滑块的颜色。这也会替换最新YouTube版本中滑块的渐变样式。";
+"SLIDER_COLOR_VALUE" = "滑块颜色值";
+
+"LIVE_SLIDER_COLOR_VALUE" = "直播滑块颜色值";
+
+"SCRUBBER_COLOR" = "更改进度指示器颜色";
+"SCRUBBER_COLOR_DESC" = "更改进度指示器的颜色。这也会用指定的颜色绘制整个自定义进度指示器图像。";
+"SCRUBBER_COLOR_VALUE" = "进度指示器颜色值";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "直播进度指示器颜色值";
+
+"SCRUBBER_IMAGE" = "使用自定义进度指示器图像";
+"SCRUBBER_IMAGE_DESC" = "为进度指示器使用自定义图像。该图像将替换默认的圆形进度指示器。";
+
+"IMPORT_IMAGE" = "导入进度指示器图像";
+"IMPORT_IMAGE_DESC" = "从剪贴板导入要用作进度指示器的图像。为获得最佳体验，图像不应大于48px x 48px。";
+
+"IMPORT_THIS_IMAGE" = "导入此图像？";
+"IMPORT_THIS_IMAGE_DESC" = "图像将保存到应用程序的Documents文件夹中，并用于视频进度指示器。";
+
+"IMAGE_TOO_LARGE" = "图像太大";
+"IMAGE_TOO_LARGE_DESC" = "图像太大。图像不应大于48px x 48px。";
+
+"VIEW_CURRENT_IMAGE" = "查看当前进度指示器图像";
+
+"NO_IMAGE" = "未找到图像";
+"NO_IMAGE_DESC" = "在剪贴板中未找到图像。请确保在导入之前已将图像复制到剪贴板。";
+
+"SCRUBBER_SIZE" = "增加进度指示器大小";
+"SCRUBBER_SIZE_DESC" = "增加进度指示器的大小。进度指示器大小根据默认进度指示器大小进行缩放。您可能需要重启应用才能使更改生效。";
+"SCRUBBER_SIZE_DEFAULT" = "默认";
+
+"ANIMATED_SLIDER" = "动画滑块和进度指示器";
+"ANIMATED_SLIDER_DESC" = "当视频流畅播放时，为滑块和进度指示器添加动画效果。";

@@ -1,0 +1,38 @@
+"ENABLED" = "Povolené";
+"ENABLED_DESC" = "Vyžaduje sa reštart aplikácie.";
+
+"SLIDER_COLOR" = "Zmeniť farbu posúvača";
+"SLIDER_COLOR_DESC" = "Zmení farbu posúvača. Tým sa tiež nahradí štýl prechodu posúvača v najnovších verziách YouTube.";
+"SLIDER_COLOR_VALUE" = "Hodnota farby posúvača";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Hodnota farby živého posúvača";
+
+"SCRUBBER_COLOR" = "Zmeniť farbu scrubbera";
+"SCRUBBER_COLOR_DESC" = "Zmení farbu scrubbera. Tým sa tiež vymaľuje celý vlastný obrázok scrubbera zadanou farbou.";
+"SCRUBBER_COLOR_VALUE" = "Hodnota farby scrubbera";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Hodnota farby živého scrubbera";
+
+"SCRUBBER_IMAGE" = "Použiť vlastný obrázok scrubbera";
+"SCRUBBER_IMAGE_DESC" = "Použite vlastný obrázok pre scrubber. Obrázok nahradí predvolený kruhový scrubber.";
+
+"IMPORT_IMAGE" = "Importovať obrázok scrubbera";
+"IMPORT_IMAGE_DESC" = "Importujte obrázok, ktorý sa použije ako scrubber zo schránky. Pre optimálny zážitok by obrázok nemal byť väčší ako 48px krát 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importovať tento obrázok?";
+"IMPORT_THIS_IMAGE_DESC" = "Obrázok sa uloží do priečinka Dokumenty aplikácie a použije sa pre video scrubber.";
+
+"IMAGE_TOO_LARGE" = "Obrázok je príliš veľký";
+"IMAGE_TOO_LARGE_DESC" = "Obrázok je príliš veľký. Obrázok by nemal byť väčší ako 48px krát 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Zobraziť aktuálny obrázok scrubbera";
+
+"NO_IMAGE" = "Nenašiel sa žiadny obrázok";
+"NO_IMAGE_DESC" = "V schránke sa nenašiel žiadny obrázok. Pred importom sa uistite, že je obrázok skopírovaný do schránky.";
+
+"SCRUBBER_SIZE" = "Zväčšiť veľkosť scrubbera";
+"SCRUBBER_SIZE_DESC" = "Zväčší veľkosť scrubbera. Veľkosť scrubbera sa škáluje na základe predvolenej veľkosti scrubbera. Možno budete musieť reštartovať aplikáciu, aby sa zmeny prejavili.";
+"SCRUBBER_SIZE_DEFAULT" = "Predvolené";
+
+"ANIMATED_SLIDER" = "Animovať posúvač a scrubber";
+"ANIMATED_SLIDER_DESC" = "Animuje posúvač a scrubber, keď sa video prehráva plynule.";

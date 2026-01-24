@@ -1,0 +1,38 @@
+"ENABLED" = "Activé";
+"ENABLED_DESC" = "Le redémarrage de l'application est requis.";
+
+"SLIDER_COLOR" = "Changer la couleur du curseur";
+"SLIDER_COLOR_DESC" = "Modifie la couleur du curseur. Cela remplace également le style dégradé du curseur pour les versions récentes de YouTube.";
+"SLIDER_COLOR_VALUE" = "Valeur de couleur du curseur";
+
+"LIVE_SLIDER_COLOR_VALUE" = "Valeur de couleur du curseur en direct";
+
+"SCRUBBER_COLOR" = "Changer la couleur du bouton";
+"SCRUBBER_COLOR_DESC" = "Modifie la couleur du bouton. Cela peint également l'intégralité de l'image personnalisée du bouton avec la couleur spécifiée.";
+"SCRUBBER_COLOR_VALUE" = "Valeur de couleur du bouton";
+
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valeur de couleur du bouton en direct";
+
+"SCRUBBER_IMAGE" = "Utiliser une image personnalisée du bouton";
+"SCRUBBER_IMAGE_DESC" = "Utilise une image personnalisée pour le bouton. L'image remplacera le bouton circulaire par défaut.";
+
+"IMPORT_IMAGE" = "Importer l'image du bouton";
+"IMPORT_IMAGE_DESC" = "Importe une image à utiliser comme bouton depuis le presse-papiers. Pour une expérience optimale, l'image ne doit pas dépasser 48px sur 48px.";
+
+"IMPORT_THIS_IMAGE" = "Importer cette image ?";
+"IMPORT_THIS_IMAGE_DESC" = "L'image sera enregistrée dans le dossier Documents de l'application et utilisée pour le bouton de la vidéo.";
+
+"IMAGE_TOO_LARGE" = "Image trop grande";
+"IMAGE_TOO_LARGE_DESC" = "L'image est trop grande. L'image ne doit pas dépasser 48px sur 48px.";
+
+"VIEW_CURRENT_IMAGE" = "Voir l'image actuelle du bouton";
+
+"NO_IMAGE" = "Aucune image trouvée";
+"NO_IMAGE_DESC" = "Aucune image n'a été trouvée dans le presse-papiers. Assurez-vous qu'une image est copiée dans le presse-papiers avant d'importer.";
+
+"SCRUBBER_SIZE" = "Augmenter la taille du bouton";
+"SCRUBBER_SIZE_DESC" = "Augmente la taille du bouton. La taille du bouton est mise à l'échelle en fonction de la taille par défaut. Vous devrez peut-être redémarrer l'application pour que les modifications prennent effet.";
+"SCRUBBER_SIZE_DEFAULT" = "Par défaut";
+
+"ANIMATED_SLIDER" = "Animer le curseur et le bouton";
+"ANIMATED_SLIDER_DESC" = "Anime le curseur et le bouton lorsque la vidéo est lue en douceur.";
