@@ -77,6 +77,15 @@ static void updateScrubberSize(UIView *scrubberCircle, CGFloat scale) {
         scrubberCircle.layer.cornerRadius = size / 2;
 }
 
+static UIView *getScrubberCircle(UIView *self) {
+    @try {
+        NSMutableDictionary <NSString *, NSMutableArray *> *decorationCollections = [self valueForKey:@"_decorationCollections"];
+        YTPlayerBarScrubberDotDecorationView *scrubberDot = [decorationCollections[@"modular_player_bar_scrubber_dot_collection_key"] firstObject];
+        return scrubberDot.scrubberDot;
+    } @catch (id ex) {}
+    return [self valueForKey:@"_scrubberCircle"];
+}
+
 static void initScrubberCircleBase(UIView *scrubberCircle, BOOL setColor) {
     if (scrubberCircle == nil) return;
     CGFloat scrubberScale = getBaseScrubberScale();
@@ -94,16 +103,16 @@ static void initScrubberCircleBase(UIView *scrubberCircle, BOOL setColor) {
 }
 
 static void initScrubberCircle(UIView *self, BOOL setColor) {
-    initScrubberCircleBase([self valueForKey:@"_scrubberCircle"], setColor);
+    initScrubberCircleBase(getScrubberCircle(self), setColor);
 }
 
 static CGPoint getScrubberCircleCenter(UIView *self) {
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    UIView *scrubberCircle = getScrubberCircle(self);
     return scrubberCircle.center;
 }
 
 static void updateScrubberColorAndPosition(UIView *self, BOOL alterScrubber, CGPoint originalCenter) {
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    UIView *scrubberCircle = getScrubberCircle(self);
     if (scrubberCircle == nil) return;
     if (alterScrubber) {
         if (IsEnabled(ScrubberImageKey))
@@ -199,7 +208,7 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 
 - (void)maybeSetDefaultScrubberBackgroundColor {
     %orig;
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberCircle"];
+    UIView *scrubberCircle = getScrubberCircle(self);
     if (IsEnabled(ScrubberImageKey))
         scrubberCircle.backgroundColor = [UIColor clearColor];
     if (IsEnabled(ScrubberImageColorKey)) {
