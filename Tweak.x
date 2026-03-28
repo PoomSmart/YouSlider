@@ -79,11 +79,11 @@ static void updateScrubberSize(UIView *scrubberCircle, CGFloat scale) {
 
 static UIView *getScrubberCircle(UIView *self) {
     @try {
-        NSMutableDictionary <NSString *, NSMutableArray *> *decorationCollections = [self valueForKey:@"_decorationCollections"];
-        YTPlayerBarScrubberDotDecorationView *scrubberDot = [decorationCollections[@"modular_player_bar_scrubber_dot_collection_key"] firstObject];
-        return scrubberDot.scrubberDot;
+        return [self valueForKey:@"_scrubberCircle"];
     } @catch (id ex) {}
-    return [self valueForKey:@"_scrubberCircle"];
+    NSMutableDictionary <NSString *, NSMutableArray *> *decorationCollections = [self valueForKey:@"_decorationCollections"];
+    YTPlayerBarScrubberDotDecorationView *scrubberDot = [decorationCollections[@"modular_player_bar_scrubber_dot_collection_key"] firstObject];
+    return scrubberDot.scrubberDot;
 }
 
 static void initScrubberCircleBase(UIView *scrubberCircle, BOOL setColor) {
