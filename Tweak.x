@@ -11,6 +11,7 @@
 #import <YouTubeHeader/YTIPlayerBarDecorationModel.h>
 #import <YouTubeHeader/YTMainAppVideoPlayerOverlayViewController.h>
 #import <YouTubeHeader/YTPlayerBarController.h>
+#import <YouTubeHeader/YTPlayerBarProgressDecorationView.h>
 #import <YouTubeHeader/YTPlayerBarRectangleDecorationView.h>
 #import <YouTubeHeader/YTPlayerBarScrubberDotDecorationController.h>
 #import <YouTubeHeader/YTPlayerBarScrubberDotDecorationView.h>
@@ -354,6 +355,31 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 
 + (BOOL)cairoRefreshSignatureMomentsEnabled {
     return IsEnabled(SliderColorKey) ? NO : %orig;
+}
+
+%end
+
+%hook YTPlayerBarProgressDecorationView
+
+- (BOOL)shouldApplyGradientColor {
+    return IsEnabled(SliderColorKey) ? NO : %orig;
+}
+
+- (void)drawProgressRect:(CGRect)rect withColor:(UIColor *)color {
+    YTIPlayerBarDecorationModel *model = [self valueForKey:@"_model"];
+    BOOL isLive = model.playingState.mode == PLAYER_BAR_MODE_LIVE || model.playingState.mode == PLAYER_BAR_MODE_LIVE_VDR;
+    UIColor *targetColor = IsEnabled(SliderColorKey) ? (isLive ? liveSliderUIColor() : sliderUIColor()) : color;
+    if (IsEnabled(AnimatedSliderKey))
+        [UIView
+            transitionWithView:self
+            duration:0.2
+            options:UIViewAnimationOptionTransitionCrossDissolve | UIViewAnimationOptionCurveLinear
+            animations:^{
+                %orig(rect, targetColor);
+            }
+            completion:nil];
+    else
+        %orig(rect, targetColor);
 }
 
 %end
