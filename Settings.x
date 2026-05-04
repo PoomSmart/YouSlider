@@ -58,7 +58,7 @@ UIImage *GetScrubberImage() {
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", ScrubberImageKey]];
     UIImage *image = [UIImage imageWithContentsOfFile:filePath];
-    return coloredImage(image);;
+    return coloredImage(image);
 }
 
 int GetSelection(NSString *key) {

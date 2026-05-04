@@ -65,7 +65,7 @@ UIColor *liveScrubberUIColor() {
 static CGFloat getBaseScrubberScale() {
     int scrubberSize = GetSelection(ScrubberSizeKey);
     if (scrubberSize == 0 && !IsEnabled(ScrubberImageKey)) return -1;
-    return 1 + (scrubberSize / 100.0);;
+    return 1 + (scrubberSize / 100.0);
 }
 
 static void updateScrubberSize(UIView *scrubberCircle, CGFloat scale) {
@@ -442,7 +442,7 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
     UIView *scrubberCircle = [self valueForKey:@"_defaultScrubberDot"];
     if (IsEnabled(ScrubberImageColorKey)) {
         UIColor *scrubberColor = scrubberUIColor();
-        if (!scrubberColor) return scrubberCircle;;
+        if (!scrubberColor) return scrubberCircle;
         scrubberCircle.backgroundColor = scrubberColor;
     }
     return scrubberCircle;
