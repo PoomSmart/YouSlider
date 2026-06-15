@@ -427,6 +427,23 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 
 %end
 
+@interface YTPlayerBarScrubberDotDecorationViewV1 : YTPlayerBarScrubberDotDecorationView
+@end
+
+%hook YTPlayerBarScrubberDotDecorationViewV1
+
+- (UIView *)expectedScrubberDot {
+    UIView *scrubberCircle = [self valueForKey:@"_scrubberDot"];
+    if (IsEnabled(ScrubberImageColorKey)) {
+        UIColor *scrubberColor = scrubberUIColor();
+        if (!scrubberColor) return scrubberCircle;
+        scrubberCircle.backgroundColor = scrubberColor;
+    }
+    return scrubberCircle;
+}
+
+%end
+
 %hook YTPlayerBarScrubberDotDecorationView
 
 - (id)initWithModel:(id)model {
