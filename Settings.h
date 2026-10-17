@@ -1,4 +1,5 @@
 #define TweakName @"YouSlider"
+#define YouSliderSettingsChangedNotification @"YouSliderSettingsChanged"
 #define EnabledKey @"YouSliderEnabled"
 #define SliderColorKey @"YSSliderColor"
 #define SliderColorValueKey @"YSSliderColorValue"

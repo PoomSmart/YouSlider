@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Ve schránce nebyl nalezen žádný obrázek. Před importem se ujistěte, že je obrázek zkopírován do schránky.";
 
 "SCRUBBER_SIZE" = "Zvětšit velikost scrubberu";
-"SCRUBBER_SIZE_DESC" = "Zvětší velikost scrubberu. Velikost scrubberu se škáluje na základě výchozí velikosti scrubberu. Možná budete muset restartovat aplikaci, aby se změny projevily.";
+"SCRUBBER_SIZE_DESC" = "Zvětší velikost scrubberu. Velikost scrubberu se škáluje na základě výchozí velikosti scrubberu.";
 "SCRUBBER_SIZE_DEFAULT" = "Výchozí";
 
 "ANIMATED_SLIDER" = "Animovat posuvník a scrubber";

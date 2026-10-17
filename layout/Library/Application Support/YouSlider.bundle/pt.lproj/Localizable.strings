@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Nenhuma imagem foi encontrada na área de transferência. Certifique-se de que uma imagem está copiada para a área de transferência antes de importar.";
 
 "SCRUBBER_SIZE" = "Aumentar tamanho do indicador";
-"SCRUBBER_SIZE_DESC" = "Aumenta o tamanho do indicador. O tamanho do indicador é dimensionado com base no tamanho predefinido. Poderá ter de reiniciar a aplicação para que as alterações tenham efeito.";
+"SCRUBBER_SIZE_DESC" = "Aumenta o tamanho do indicador. O tamanho do indicador é dimensionado com base no tamanho predefinido.";
 "SCRUBBER_SIZE_DEFAULT" = "Predefinido";
 
 "ANIMATED_SLIDER" = "Animar controlo deslizante e indicador";

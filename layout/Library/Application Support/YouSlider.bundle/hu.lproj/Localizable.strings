@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Nem található kép a vágólapon. Győződjön meg arról, hogy egy kép a vágólapra van másolva az importálás előtt.";
 
 "SCRUBBER_SIZE" = "Scrubber méretének növelése";
-"SCRUBBER_SIZE_DESC" = "Növeli a scrubber méretét. A scrubber mérete az alapértelmezett scrubber méret alapján van skálázva. Előfordulhat, hogy újra kell indítania az alkalmazást a változtatások érvénybe lépéséhez.";
+"SCRUBBER_SIZE_DESC" = "Növeli a scrubber méretét. A scrubber mérete az alapértelmezett scrubber méret alapján van skálázva.";
 "SCRUBBER_SIZE_DEFAULT" = "Alapértelmezett";
 
 "ANIMATED_SLIDER" = "Csúszka és scrubber animálása";

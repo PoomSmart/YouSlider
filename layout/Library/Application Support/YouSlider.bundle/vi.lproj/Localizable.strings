@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Không có hình ảnh được tìm thấy trong bảng tạm.  Đảm bảo rằng một hình ảnh được sao chép vào bảng tạm trước khi nhập.";
 
 "SCRUBBER_SIZE" = "Tăng kích thước Scrubber";
-"SCRUBBER_SIZE_DESC" = "Tăng kích thước của Scrubber.  Kích thước Scrubber được tỷ lệ dựa trên kích thước Scrubber mặc định.  Bạn có thể phải khởi động lại ứng dụng để có hiệu lực.";
+"SCRUBBER_SIZE_DESC" = "Tăng kích thước của Scrubber. Kích thước Scrubber được tỷ lệ dựa trên kích thước Scrubber mặc định.";
 "SCRUBBER_SIZE_DEFAULT" = "Mặc định";
 
 "ANIMATED_SLIDER" = "Hoạt hình thanh trượt và Scrubber";

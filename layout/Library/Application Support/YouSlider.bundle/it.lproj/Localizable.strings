@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Nessuna immagine è stata trovata negli appunti. Assicurati che un'immagine sia copiata negli appunti prima di importare.";
 
 "SCRUBBER_SIZE" = "Aumenta dimensione dell'indicatore";
-"SCRUBBER_SIZE_DESC" = "Aumenta la dimensione dell'indicatore. La dimensione dell'indicatore viene ridimensionata in base alla dimensione predefinita. Potrebbe essere necessario riavviare l'app affinché le modifiche abbiano effetto.";
+"SCRUBBER_SIZE_DESC" = "Aumenta la dimensione dell'indicatore. La dimensione dell'indicatore viene ridimensionata in base alla dimensione predefinita.";
 "SCRUBBER_SIZE_DEFAULT" = "Predefinito";
 
 "ANIMATED_SLIDER" = "Anima cursore e indicatore";

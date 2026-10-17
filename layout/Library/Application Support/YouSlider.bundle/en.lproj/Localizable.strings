@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "No image was found in the clipboard. Ensure that an image is copied to the clipboard before importing.";
 
 "SCRUBBER_SIZE" = "Increase scrubber size";
-"SCRUBBER_SIZE_DESC" = "Increase the size of the scrubber. The scrubber size is scaled based on the default scrubber size. You may have to restart the app for the changes to take effect.";
+"SCRUBBER_SIZE_DESC" = "Increase the size of the scrubber. The scrubber size is scaled based on the default scrubber size.";
 "SCRUBBER_SIZE_DEFAULT" = "Default";
 
 "ANIMATED_SLIDER" = "Animate slider and scrubber";

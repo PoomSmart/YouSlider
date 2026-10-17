@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "在剪貼簿中找不到圖像。請確保在匯入之前已將圖像複製到剪貼簿。";
 
 "SCRUBBER_SIZE" = "增加進度指示器大小";
-"SCRUBBER_SIZE_DESC" = "增加進度指示器的大小。進度指示器大小根據預設進度指示器大小進行縮放。您可能需要重新啟動應用程式才能使變更生效。";
+"SCRUBBER_SIZE_DESC" = "增加進度指示器的大小。進度指示器大小根據預設進度指示器大小進行縮放。";
 "SCRUBBER_SIZE_DEFAULT" = "預設";
 
 "ANIMATED_SLIDER" = "動畫滑桿和進度指示器";

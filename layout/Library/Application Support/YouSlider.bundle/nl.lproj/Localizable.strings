@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Er is geen afbeelding gevonden op het klembord. Zorg ervoor dat een afbeelding naar het klembord is gekopieerd voordat u importeert.";
 
 "SCRUBBER_SIZE" = "Scrubbergrootte vergroten";
-"SCRUBBER_SIZE_DESC" = "Vergroot de grootte van de scrubber. De scrubbergrootte wordt geschaald op basis van de standaard scrubbergrootte. Mogelijk moet u de app opnieuw opstarten om de wijzigingen door te voeren.";
+"SCRUBBER_SIZE_DESC" = "Vergroot de grootte van de scrubber. De scrubbergrootte wordt geschaald op basis van de standaard scrubbergrootte.";
 "SCRUBBER_SIZE_DEFAULT" = "Standaard";
 
 "ANIMATED_SLIDER" = "Schuif en scrubber animeren";

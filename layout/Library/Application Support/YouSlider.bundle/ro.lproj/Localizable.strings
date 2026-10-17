@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Nu a fost găsită nicio imagine în clipboard. Asigură-te că o imagine este copiată în clipboard înainte de import.";
 
 "SCRUBBER_SIZE" = "Mărește dimensiunea indicatorului";
-"SCRUBBER_SIZE_DESC" = "Mărește dimensiunea indicatorului. Dimensiunea indicatorului este scalată pe baza dimensiunii implicite. S-ar putea să fie nevoie să repornești aplicația pentru ca modificările să aibă efect.";
+"SCRUBBER_SIZE_DESC" = "Mărește dimensiunea indicatorului. Dimensiunea indicatorului este scalată pe baza dimensiunii implicite.";
 "SCRUBBER_SIZE_DEFAULT" = "Implicit";
 
 "ANIMATED_SLIDER" = "Animează cursorul și indicatorul";

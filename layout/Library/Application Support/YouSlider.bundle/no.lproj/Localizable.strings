@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Ingen bilde ble funnet i utklippstavlen. Sørg for at et bilde kopieres til utklippstavlen før import.";
 
 "SCRUBBER_SIZE" = "Øk scrubber størrelse";
-"SCRUBBER_SIZE_DESC" = "Øker størrelsen på scrubberen. Scrubberstørrelsen skaleres basert på standardstørrelsen. Du må kanskje starte appen på nytt for at endringene skal tre i kraft.";
+"SCRUBBER_SIZE_DESC" = "Øker størrelsen på scrubberen. Scrubberstørrelsen skaleres basert på standardstørrelsen.";
 "SCRUBBER_SIZE_DEFAULT" = "Standard";
 
 "ANIMATED_SLIDER" = "Animer glidebryter og scrubber";

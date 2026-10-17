@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Tidak ada gambar ditemukan di clipboard. Pastikan gambar disalin ke clipboard sebelum mengimpor.";
 
 "SCRUBBER_SIZE" = "Perbesar ukuran scrubber";
-"SCRUBBER_SIZE_DESC" = "Memperbesar ukuran scrubber. Ukuran scrubber diskalakan berdasarkan ukuran scrubber default. Anda mungkin harus me-restart aplikasi agar perubahan diterapkan.";
+"SCRUBBER_SIZE_DESC" = "Memperbesar ukuran scrubber. Ukuran scrubber diskalakan berdasarkan ukuran scrubber default.";
 "SCRUBBER_SIZE_DEFAULT" = "Default";
 
 "ANIMATED_SLIDER" = "Animasikan slider dan scrubber";

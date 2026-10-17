@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Ingen bild hittades i urklipp. Se till att en bild kopieras till urklipp innan import.";
 
 "SCRUBBER_SIZE" = "Öka scrubber storlek";
-"SCRUBBER_SIZE_DESC" = "Ökar storleken på scrubbern. Scrubberstorleken skalas baserat på standardstorleken. Du kan behöva starta om appen för att ändringarna ska träda i kraft.";
+"SCRUBBER_SIZE_DESC" = "Ökar storleken på scrubbern. Scrubberstorleken skalas baserat på standardstorleken.";
 "SCRUBBER_SIZE_DEFAULT" = "Standard";
 
 "ANIMATED_SLIDER" = "Animera skjutreglage och scrubber";

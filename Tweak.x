@@ -15,6 +15,7 @@
 #import <YouTubeHeader/YTPlayerBarRectangleDecorationView.h>
 #import <YouTubeHeader/YTPlayerBarScrubberDotDecorationController.h>
 #import <YouTubeHeader/YTPlayerBarScrubberDotDecorationView.h>
+#import <YouTubeHeader/YTPlayerBarScrubberDotView.h>
 #import <YouTubeHeader/YTPlayerBarSegmentView.h>
 #import <YouTubeHeader/YTSegmentableInlinePlayerBarView.h>
 #import "Settings.h"
@@ -138,6 +139,50 @@ static CGFloat getScrubberScale(CGFloat scale) {
     return scale / YOUTUBE_SCRUBBER_SCALE + 0.00001;
 }
 
+static CGFloat getDecorationScrubberScale(CGFloat scale) {
+    if (!IsEnabled(ScrubberImageKey)) return scale;
+    CGFloat base = getBaseScrubberScale();
+    return base > 0 ? scale * base : scale;
+}
+
+static CGSize scaledCustomScrubberImageSize(UIView *dot, CGSize youtubeSize) {
+    CGFloat base = getBaseScrubberScale();
+    if (base <= 0) base = 1;
+    CGFloat parent = MIN(dot.bounds.size.width, dot.bounds.size.height);
+    if (parent > 2.0)
+        return CGSizeMake(parent, parent);
+    CGFloat youtube = MAX(youtubeSize.width, youtubeSize.height);
+    CGFloat rest = DEFAULT_SCRUBBER_SIZE * base;
+    if (youtube >= 20.0 && youtube < 24.0) {
+        CGFloat drag = rest * (20.0 / DEFAULT_SCRUBBER_SIZE);
+        return CGSizeMake(drag, drag);
+    }
+    return CGSizeMake(rest, rest);
+}
+
+static UIImage *effectiveCustomScrubberIcon(UIImage *image, BOOL *applied) {
+    *applied = YES;
+    if (!IsEnabled(ScrubberImageKey)) return image;
+    UIImage *userImage = GetScrubberImage();
+    if (!userImage) {
+        *applied = NO;
+        return nil;
+    }
+    return userImage;
+}
+
+static void applyDecorationScrubberColor(YTPlayerBarScrubberDotDecorationView *decorationView) {
+    if (![decorationView respondsToSelector:@selector(setScrubberDotColor:)]) return;
+    if (IsEnabled(ScrubberImageKey)) {
+        [decorationView setScrubberDotColor:nil];
+        return;
+    }
+    if (!IsEnabled(ScrubberImageColorKey)) return;
+    UIColor *color = scrubberUIColor();
+    if (color)
+        [decorationView setScrubberDotColor:color];
+}
+
 static void setTweakCustomScrubberIcon(id self_, UIView *scrubberCircle) {
     YTModularPlayerBarView *self = self_;
     UIImageView *imageView = self.tweakCustomScrubberImageView;
@@ -161,7 +206,68 @@ static void setTweakCustomScrubberIcon(id self_, UIView *scrubberCircle) {
     }
 }
 
+static __weak YTMainAppVideoPlayerOverlayViewController *currentOverlayVC;
+static id settingsObserver;
+static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController *self);
+
+static void setNeedsDisplayRecursive(UIView *view) {
+    [view setNeedsDisplay];
+    [view setNeedsLayout];
+    for (UIView *subview in view.subviews)
+        setNeedsDisplayRecursive(subview);
+}
+
+static void forceDecorationScaleRefresh(YTPlayerBarScrubberDotDecorationView *decorationView) {
+    if (![decorationView respondsToSelector:@selector(transformScrubberScale:)]) return;
+    CGFloat youtubeScale = 6.0;
+    @try {
+        NSInteger scaleEnum = [[decorationView valueForKey:@"_scrubberDotDecorationScale"] integerValue];
+        if (scaleEnum <= 0)
+            youtubeScale = 0;
+        else if (scaleEnum == 2)
+            youtubeScale = [[decorationView valueForKey:@"_dragEnlargedScale"] doubleValue] ?: 10;
+        else
+            youtubeScale = [[decorationView valueForKey:@"_enlargedScale"] doubleValue] ?: 6;
+    } @catch (id ex) {}
+    [decorationView transformScrubberScale:youtubeScale + 0.01];
+    [decorationView transformScrubberScale:youtubeScale];
+    [decorationView setNeedsLayout];
+    [decorationView layoutIfNeeded];
+}
+
+static void refreshCurrentScrubber() {
+    YTMainAppVideoPlayerOverlayViewController *overlay = currentOverlayVC;
+    if (![overlay respondsToSelector:@selector(playerBarController)]) return;
+    findViewAndSetScrubberIcon(overlay);
+    YTInlinePlayerBarContainerView *playerBar = overlay.playerBarController.playerBar;
+    if (!playerBar) return;
+    setNeedsDisplayRecursive(playerBar);
+    YTPlayerBarScrubberDotDecorationView *decorationView = nil;
+    @try {
+        YTPlayerBarScrubberDotDecorationController *controller = [playerBar valueForKey:@"_scrubberDotDecorationController"];
+        decorationView = [controller scrubberDot];
+    } @catch (id ex) {}
+    if (decorationView) {
+        forceDecorationScaleRefresh(decorationView);
+        return;
+    }
+    id view = nil;
+    if ([playerBar respondsToSelector:@selector(modularPlayerBar)] && playerBar.modularPlayerBar)
+        view = playerBar.modularPlayerBar.view;
+    else if ([playerBar respondsToSelector:@selector(segmentablePlayerBar)] && playerBar.segmentablePlayerBar) {
+        id segmentablePlayerBar = playerBar.segmentablePlayerBar;
+        if ([segmentablePlayerBar isKindOfClass:%c(YTModularPlayerBarController)])
+            view = ((YTModularPlayerBarController *)segmentablePlayerBar).view;
+        else
+            view = segmentablePlayerBar;
+    } else
+        view = playerBar.playerBar;
+    if (view)
+        initScrubberCircle(view, YES);
+}
+
 static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController *self) {
+    currentOverlayVC = self;
     YTInlinePlayerBarContainerView *playerBar = self.playerBarController.playerBar;
     id view;
     if ([playerBar respondsToSelector:@selector(modularPlayerBar)]) {
@@ -170,7 +276,17 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
             YTPlayerBarScrubberDotDecorationController *scrubberDotDecorationController = [playerBar valueForKey:@"_scrubberDotDecorationController"];
             if (scrubberDotDecorationController) {
                 YTPlayerBarScrubberDotDecorationView *scrubberDotDecorationView = [scrubberDotDecorationController scrubberDot];
-                UIView *scrubberCircle = scrubberDotDecorationView.scrubberDot;
+                if ([scrubberDotDecorationView respondsToSelector:@selector(setCustomImageScrubberIcon:)]) {
+                    UIImage *image = IsEnabled(ScrubberImageKey) ? GetScrubberImage() : nil;
+                    [scrubberDotDecorationView setCustomImageScrubberIcon:image];
+                    applyDecorationScrubberColor(scrubberDotDecorationView);
+                    if ([view respondsToSelector:@selector(tweakCustomScrubberImageView)]) {
+                        [[view tweakCustomScrubberImageView] removeFromSuperview];
+                        [view setTweakCustomScrubberImageView:nil];
+                    }
+                    return;
+                }
+                UIView *scrubberCircle = scrubberDotDecorationView.scrubberDot; // Or YTPlayerBarScrubberDotView
                 setTweakCustomScrubberIcon(view, scrubberCircle);
                 return;
             }
@@ -203,8 +319,10 @@ static void findViewAndSetScrubberIcon(YTMainAppVideoPlayerOverlayViewController
 }
 
 - (void)setCustomScrubberIcon:(UIImage *)image {
-    if (IsEnabled(ScrubberImageKey)) return;
-    %orig;
+    BOOL applied;
+    image = effectiveCustomScrubberIcon(image, &applied);
+    if (!applied) return;
+    %orig(image);
 }
 
 - (void)maybeSetDefaultScrubberBackgroundColor {
@@ -421,8 +539,10 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 %hook YTInlinePlayerBarContainerView
 
 - (void)setCustomScrubberIcon:(UIImage *)image {
-    if (IsEnabled(ScrubberImageKey)) return;
-    %orig;
+    BOOL applied;
+    image = effectiveCustomScrubberIcon(image, &applied);
+    if (!applied) return;
+    %orig(image);
 }
 
 %end
@@ -430,16 +550,99 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 @interface YTPlayerBarScrubberDotDecorationViewV1 : YTPlayerBarScrubberDotDecorationView
 @end
 
+@interface YTPlayerBarScrubberDotDecorationViewV2 : YTPlayerBarScrubberDotDecorationView
+@end
+
+%hook YTPlayerBarScrubberDotView
+
+- (void)setCustomScrubberImageViewSize:(CGSize)size {
+    if (IsEnabled(ScrubberImageKey))
+        size = scaledCustomScrubberImageSize(self, size);
+    %orig(size);
+}
+
+%end
+
+%hook YTPlayerBarScrubberDotDecorationViewV2
+
+- (void)transformScrubberScale:(CGFloat)scale {
+    CGFloat base = getBaseScrubberScale();
+    if (base != -1)
+        scale *= base;
+    %orig(scale);
+}
+
+- (void)setCustomImageScrubberIcon:(UIImage *)image {
+    BOOL applied;
+    image = effectiveCustomScrubberIcon(image, &applied);
+    if (!applied) return;
+    %orig(image);
+}
+
+- (void)setScrubberDotColor:(UIColor *)color {
+    if (IsEnabled(ScrubberImageKey))
+        color = nil;
+    else if (IsEnabled(ScrubberImageColorKey)) {
+        UIColor *scrubberColor = scrubberUIColor();
+        if (scrubberColor) color = scrubberColor;
+    }
+    %orig(color);
+}
+
+- (void)updateFrameWithPlayerBarFrame:(CGRect)frame {
+    if (IsEnabled(AnimatedSliderKey))
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            %orig;
+        } completion:nil];
+    else
+        %orig;
+}
+
+%end
+
 %hook YTPlayerBarScrubberDotDecorationViewV1
 
+- (void)transformScrubberScale:(CGFloat)scale {
+    %orig(getDecorationScrubberScale(scale));
+}
+
+- (void)setCustomImageScrubberIcon:(UIImage *)image {
+    BOOL applied;
+    image = effectiveCustomScrubberIcon(image, &applied);
+    if (!applied) return;
+    %orig(image);
+}
+
+- (void)setScrubberDotColor:(UIColor *)color {
+    if (IsEnabled(ScrubberImageKey))
+        color = nil;
+    else if (IsEnabled(ScrubberImageColorKey)) {
+        UIColor *scrubberColor = scrubberUIColor();
+        if (scrubberColor) color = scrubberColor;
+    }
+    %orig(color);
+}
+
 - (UIView *)expectedScrubberDot {
-    UIView *scrubberCircle = [self valueForKey:@"_scrubberDot"];
-    if (IsEnabled(ScrubberImageColorKey)) {
+    UIView *scrubberCircle = %orig;
+    if (!scrubberCircle) return nil;
+    if (IsEnabled(ScrubberImageKey))
+        scrubberCircle.backgroundColor = [UIColor clearColor];
+    else if (IsEnabled(ScrubberImageColorKey)) {
         UIColor *scrubberColor = scrubberUIColor();
         if (!scrubberColor) return scrubberCircle;
         scrubberCircle.backgroundColor = scrubberColor;
     }
     return scrubberCircle;
+}
+
+- (void)updateFrameWithPlayerBarFrame:(CGRect)frame {
+    if (IsEnabled(AnimatedSliderKey))
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            %orig;
+        } completion:nil];
+    else
+        %orig;
 }
 
 %end
@@ -449,14 +652,16 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 - (id)initWithModel:(id)model {
     self = %orig;
     if (self) {
-        UIView *scrubberCircle = [self valueForKey:@"_defaultScrubberDot"];
-        initScrubberCircleBase(scrubberCircle, YES);
+        if (!IsEnabled(ScrubberImageKey))
+            initScrubberCircleBase([self valueForKey:@"_defaultScrubberDot"], YES);
+        applyDecorationScrubberColor(self);
     }
     return self;
 }
 
 - (UIView *)expectedScrubberDot {
-    UIView *scrubberCircle = [self valueForKey:@"_defaultScrubberDot"];
+    UIView *scrubberCircle = %orig;
+    if (!scrubberCircle) return nil;
     if (IsEnabled(ScrubberImageColorKey)) {
         UIColor *scrubberColor = scrubberUIColor();
         if (!scrubberColor) return scrubberCircle;
@@ -466,12 +671,14 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 }
 
 - (void)transformScrubberScale:(CGFloat)scale {
-    %orig(getScrubberScale(scale));
+    %orig(getDecorationScrubberScale(scale));
 }
 
 - (void)setCustomImageScrubberIcon:(UIImage *)image {
-    if (IsEnabled(ScrubberImageKey)) return;
-    %orig;
+    BOOL applied;
+    image = effectiveCustomScrubberIcon(image, &applied);
+    if (!applied) return;
+    %orig(image);
 }
 
 - (void)updateFrameWithPlayerBarFrame:(CGRect)frame {
@@ -555,6 +762,11 @@ static void setSliderColorIfNeeded(YTPlayerBarSegmentView *self, CGRect rect) {
 
 %hook YTMainAppVideoPlayerOverlayViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    %orig;
+    currentOverlayVC = self;
+}
+
 - (void)setWatchNextResponse:(id)response loading:(BOOL)loading {
     findViewAndSetScrubberIcon(self);
     %orig;
@@ -624,4 +836,7 @@ static ELMNodeController *getNodeControllerParent(ELMNodeController *nodeControl
     }];
     if (!IsEnabled(EnabledKey)) return;
     %init;
+    settingsObserver = [[NSNotificationCenter defaultCenter] addObserverForName:YouSliderSettingsChangedNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+        refreshCurrentScrubber();
+    }];
 }

@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Nie znaleziono obrazu w schowku. Upewnij się, że obraz został skopiowany do schowka przed importowaniem.";
 
 "SCRUBBER_SIZE" = "Zwiększ rozmiar wskaźnika";
-"SCRUBBER_SIZE_DESC" = "Zwiększa rozmiar wskaźnika. Rozmiar wskaźnika jest skalowany na podstawie domyślnego rozmiaru wskaźnika. Może być konieczne ponowne uruchomienie aplikacji, aby zmiany zaczęły obowiązywać.";
+"SCRUBBER_SIZE_DESC" = "Zwiększa rozmiar wskaźnika. Rozmiar wskaźnika jest skalowany na podstawie domyślnego rozmiaru wskaźnika.";
 "SCRUBBER_SIZE_DEFAULT" = "Domyślny";
 
 "ANIMATED_SLIDER" = "Animuj suwak i wskaźnik";

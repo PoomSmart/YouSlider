@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Tiada imej dijumpai dalam papan klip. Pastikan imej disalin ke papan klip sebelum mengimport.";
 
 "SCRUBBER_SIZE" = "Tingkatkan saiz scrubber";
-"SCRUBBER_SIZE_DESC" = "Meningkatkan saiz scrubber. Saiz scrubber diskala berdasarkan saiz scrubber lalai. Anda mungkin perlu memulakan semula aplikasi untuk perubahan berkuat kuasa.";
+"SCRUBBER_SIZE_DESC" = "Meningkatkan saiz scrubber. Saiz scrubber diskala berdasarkan saiz scrubber lalai.";
 "SCRUBBER_SIZE_DEFAULT" = "Lalai";
 
 "ANIMATED_SLIDER" = "Animasikan peluncur dan scrubber";

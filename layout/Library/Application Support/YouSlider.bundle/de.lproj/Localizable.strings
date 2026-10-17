@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "In der Zwischenablage wurde kein Bild gefunden. Stellen Sie sicher, dass ein Bild in die Zwischenablage kopiert wurde, bevor Sie es importieren.";
 
 "SCRUBBER_SIZE" = "Scrubber-Größe erhöhen";
-"SCRUBBER_SIZE_DESC" = "Erhöht die Größe des Scrubbers. Die Scrubber-Größe wird basierend auf der Standardgröße skaliert. Möglicherweise müssen Sie die App neu starten, damit die Änderungen wirksam werden.";
+"SCRUBBER_SIZE_DESC" = "Erhöht die Größe des Scrubbers. Die Scrubber-Größe wird basierend auf der Standardgröße skaliert.";
 "SCRUBBER_SIZE_DEFAULT" = "Standard";
 
 "ANIMATED_SLIDER" = "Schieberegler und Scrubber animieren";

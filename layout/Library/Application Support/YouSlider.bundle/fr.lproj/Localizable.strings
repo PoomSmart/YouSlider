@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Aucune image n'a été trouvée dans le presse-papiers. Assurez-vous qu'une image est copiée dans le presse-papiers avant d'importer.";
 
 "SCRUBBER_SIZE" = "Augmenter la taille du bouton";
-"SCRUBBER_SIZE_DESC" = "Augmente la taille du bouton. La taille du bouton est mise à l'échelle en fonction de la taille par défaut. Vous devrez peut-être redémarrer l'application pour que les modifications prennent effet.";
+"SCRUBBER_SIZE_DESC" = "Augmente la taille du bouton. La taille du bouton est mise à l'échelle en fonction de la taille par défaut.";
 "SCRUBBER_SIZE_DEFAULT" = "Par défaut";
 
 "ANIMATED_SLIDER" = "Animer le curseur et le bouton";

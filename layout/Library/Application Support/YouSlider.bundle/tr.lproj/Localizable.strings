@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "Panoda görüntü bulunamadı. İçe aktarmadan önce panoya bir görüntü kopyalandığından emin olun.";
 
 "SCRUBBER_SIZE" = "Gösterge boyutunu artır";
-"SCRUBBER_SIZE_DESC" = "Göstergenin boyutunu artırır. Gösterge boyutu, varsayılan gösterge boyutuna göre ölçeklenir. Değişikliklerin etkili olması için uygulamayı yeniden başlatmanız gerekebilir.";
+"SCRUBBER_SIZE_DESC" = "Göstergenin boyutunu artırır. Gösterge boyutu, varsayılan gösterge boyutuna göre ölçeklenir.";
 "SCRUBBER_SIZE_DEFAULT" = "Varsayılan";
 
 "ANIMATED_SLIDER" = "Kaydırıcı ve göstergeyi canlandır";

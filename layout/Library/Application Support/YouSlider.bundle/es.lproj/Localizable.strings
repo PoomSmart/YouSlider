@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "No se encontró ninguna imagen en el portapapeles. Asegúrate de que una imagen esté copiada en el portapapeles antes de importar.";
 
 "SCRUBBER_SIZE" = "Aumentar tamaño del indicador";
-"SCRUBBER_SIZE_DESC" = "Aumenta el tamaño del indicador. El tamaño del indicador se escala según el tamaño predeterminado. Es posible que debas reiniciar la aplicación para que los cambios surtan efecto.";
+"SCRUBBER_SIZE_DESC" = "Aumenta el tamaño del indicador. El tamaño del indicador se escala según el tamaño predeterminado.";
 "SCRUBBER_SIZE_DEFAULT" = "Predeterminado";
 
 "ANIMATED_SLIDER" = "Animar control deslizante e indicador";

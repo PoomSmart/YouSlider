@@ -65,6 +65,10 @@ int GetSelection(NSString *key) {
     return [[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 
+static void NotifyYouSliderSettingsChanged() {
+    [[NSNotificationCenter defaultCenter] postNotificationName:YouSliderSettingsChangedNotification object:nil];
+}
+
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
     static dispatch_once_t onceToken;
@@ -120,6 +124,7 @@ NSBundle *TweakBundle() {
         return;
     NSString *hex = [color LOT_hexStringValue];
     [[NSUserDefaults standardUserDefaults] setObject:hex forKey:key];
+    NotifyYouSliderSettingsChanged();
     YTSettingsViewController *settingsViewController = [self valueForKey:@"_settingsViewControllerDelegate"];
     [settingsViewController reloadData];
 }
@@ -152,6 +157,7 @@ NSBundle *TweakBundle() {
         switchOn:IsEnabled(SliderColorKey)
         switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
             [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:SliderColorKey];
+            NotifyYouSliderSettingsChanged();
             return YES;
         }
         settingItemId:0];
@@ -206,6 +212,7 @@ NSBundle *TweakBundle() {
         switchOn:IsEnabled(ScrubberImageColorKey)
         switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
             [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:ScrubberImageColorKey];
+            NotifyYouSliderSettingsChanged();
             return YES;
         }
         settingItemId:0];
@@ -260,6 +267,7 @@ NSBundle *TweakBundle() {
         switchOn:IsEnabled(ScrubberImageKey)
         switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
             [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:ScrubberImageKey];
+            NotifyYouSliderSettingsChanged();
             return YES;
         }
         settingItemId:0];
@@ -287,6 +295,7 @@ NSBundle *TweakBundle() {
                     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
                     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", ScrubberImageKey]];
                     [imageData writeToFile:filePath atomically:YES];
+                    NotifyYouSliderSettingsChanged();
                 } actionTitle:yesText];
                 alertView.title = LOC(@"IMPORT_THIS_IMAGE");
                 alertView.subtitle = LOC(@"IMPORT_THIS_IMAGE_DESC");
@@ -333,6 +342,7 @@ NSBundle *TweakBundle() {
                 NSString *sizeTitle = i ? [NSString stringWithFormat:@"%d%%", i] : LOC(@"SCRUBBER_SIZE_DEFAULT");
                 YTSettingsSectionItem *size = [YTSettingsSectionItemClass checkmarkItemWithTitle:sizeTitle titleDescription:nil selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
                     [[NSUserDefaults standardUserDefaults] setInteger:i forKey:ScrubberSizeKey];
+                    NotifyYouSliderSettingsChanged();
                     [settingsViewController reloadData];
                     return YES;
                 }];
@@ -353,6 +363,7 @@ NSBundle *TweakBundle() {
         switchOn:IsEnabled(AnimatedSliderKey)
         switchBlock:^BOOL (YTSettingsCell *cell, BOOL enabled) {
             [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:AnimatedSliderKey];
+            NotifyYouSliderSettingsChanged();
             return YES;
         }
         settingItemId:0];

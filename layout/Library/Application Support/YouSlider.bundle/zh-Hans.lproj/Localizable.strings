@@ -31,7 +31,7 @@
 "NO_IMAGE_DESC" = "在剪贴板中未找到图像。请确保在导入之前已将图像复制到剪贴板。";
 
 "SCRUBBER_SIZE" = "增加进度指示器大小";
-"SCRUBBER_SIZE_DESC" = "增加进度指示器的大小。进度指示器大小根据默认进度指示器大小进行缩放。您可能需要重启应用才能使更改生效。";
+"SCRUBBER_SIZE_DESC" = "增加进度指示器的大小。进度指示器大小根据默认进度指示器大小进行缩放。";
 "SCRUBBER_SIZE_DEFAULT" = "默认";
 
 "ANIMATED_SLIDER" = "动画滑块和进度指示器";
