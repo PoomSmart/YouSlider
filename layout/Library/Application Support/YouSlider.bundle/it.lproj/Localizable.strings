@@ -2,13 +2,13 @@
 "ENABLED_DESC" = "È necessario riavviare l'app.";
 
 "SLIDER_COLOR" = "Cambia colore del cursore";
-"SLIDER_COLOR_DESC" = "Modifica il colore del cursore. Questo sostituisce anche lo stile sfumato del cursore per le versioni recenti di YouTube.";
+"SLIDER_COLOR_DESC" = "Modifica il colore del cursore. Sostituisce inoltre lo stile sfumato del cursore nelle versioni recenti di YouTube.";
 "SLIDER_COLOR_VALUE" = "Valore colore del cursore";
 
 "LIVE_SLIDER_COLOR_VALUE" = "Valore colore del cursore live";
 
 "SCRUBBER_COLOR" = "Cambia colore dell'indicatore";
-"SCRUBBER_COLOR_DESC" = "Modifica il colore dell'indicatore. Questo colora anche l'intera immagine personalizzata dell'indicatore con il colore specificato.";
+"SCRUBBER_COLOR_DESC" = "Modifica il colore dell'indicatore. Applica inoltre il colore specificato all'intera immagine personalizzata dell'indicatore.";
 "SCRUBBER_COLOR_VALUE" = "Valore colore dell'indicatore";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "Valore colore dell'indicatore live";
@@ -17,13 +17,13 @@
 "SCRUBBER_IMAGE_DESC" = "Utilizza un'immagine personalizzata per l'indicatore. L'immagine sostituirà l'indicatore circolare predefinito.";
 
 "IMPORT_IMAGE" = "Importa immagine dell'indicatore";
-"IMPORT_IMAGE_DESC" = "Importa un'immagine da utilizzare come indicatore dagli appunti. Per un'esperienza ottimale, l'immagine non deve essere più grande di 48px per 48px.";
+"IMPORT_IMAGE_DESC" = "Importa un'immagine da utilizzare come indicatore dagli appunti. Per un'esperienza ottimale, l'immagine non deve essere più grande di 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Importare questa immagine?";
 "IMPORT_THIS_IMAGE_DESC" = "L'immagine verrà salvata nella cartella Documenti dell'applicazione e utilizzata per l'indicatore video.";
 
 "IMAGE_TOO_LARGE" = "Immagine troppo grande";
-"IMAGE_TOO_LARGE_DESC" = "L'immagine è troppo grande. L'immagine non deve essere più grande di 48px per 48px.";
+"IMAGE_TOO_LARGE_DESC" = "L'immagine è troppo grande. L'immagine non deve essere più grande di 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Visualizza immagine corrente dell'indicatore";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Predefinito";
 
 "ANIMATED_SLIDER" = "Anima cursore e indicatore";
-"ANIMATED_SLIDER_DESC" = "Anima il cursore e l'indicatore quando il video viene riprodotto in modo fluido.";
+"ANIMATED_SLIDER_DESC" = "Anima in modo fluido il cursore e l'indicatore durante la riproduzione del video.";
