@@ -8,7 +8,7 @@
 "LIVE_SLIDER_COLOR_VALUE" = "Valor da cor do controle deslizante ao vivo";
 
 "SCRUBBER_COLOR" = "Alterar cor do indicador";
-"SCRUBBER_COLOR_DESC" = "Altera a cor do indicador. Isso também pinta toda a imagem personalizada do indicador com a cor especificada.";
+"SCRUBBER_COLOR_DESC" = "Altera a cor do indicador. Isso também aplica a cor especificada a toda a imagem personalizada do indicador.";
 "SCRUBBER_COLOR_VALUE" = "Valor da cor do indicador";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "Valor da cor do indicador ao vivo";
@@ -17,13 +17,13 @@
 "SCRUBBER_IMAGE_DESC" = "Utiliza uma imagem personalizada para o indicador. A imagem substituirá o indicador circular padrão.";
 
 "IMPORT_IMAGE" = "Importar imagem do indicador";
-"IMPORT_IMAGE_DESC" = "Importa uma imagem para usar como indicador da área de transferência. Para uma experiência ideal, a imagem não deve ser maior que 48px por 48px.";
+"IMPORT_IMAGE_DESC" = "Importa uma imagem para usar como indicador da área de transferência. Para uma experiência ideal, a imagem não deve ser maior que 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Importar esta imagem?";
 "IMPORT_THIS_IMAGE_DESC" = "A imagem será salva na pasta Documentos do aplicativo e usada para o indicador de vídeo.";
 
 "IMAGE_TOO_LARGE" = "Imagem muito grande";
-"IMAGE_TOO_LARGE_DESC" = "A imagem é muito grande. A imagem não deve ser maior que 48px por 48px.";
+"IMAGE_TOO_LARGE_DESC" = "A imagem é muito grande. A imagem não deve exceder 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Ver imagem atual do indicador";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Padrão";
 
 "ANIMATED_SLIDER" = "Animar controle deslizante e indicador";
-"ANIMATED_SLIDER_DESC" = "Anima o controle deslizante e o indicador quando o vídeo está sendo reproduzido de forma suave.";
+"ANIMATED_SLIDER_DESC" = "Anima suavemente o controle deslizante e o indicador durante a reprodução do vídeo.";
