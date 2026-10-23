@@ -8,7 +8,7 @@
 "LIVE_SLIDER_COLOR_VALUE" = "Valoarea culorii cursorului live";
 
 "SCRUBBER_COLOR" = "Schimbă culoarea indicatorului";
-"SCRUBBER_COLOR_DESC" = "Schimbă culoarea indicatorului. Aceasta pictează și întreaga imagine personalizată a indicatorului cu culoarea specificată.";
+"SCRUBBER_COLOR_DESC" = "Schimbă culoarea indicatorului. Aceasta aplică, de asemenea, culoarea specificată întregii imagini personalizate a indicatorului.";
 "SCRUBBER_COLOR_VALUE" = "Valoarea culorii indicatorului";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "Valoarea culorii indicatorului live";
@@ -17,13 +17,13 @@
 "SCRUBBER_IMAGE_DESC" = "Folosește o imagine personalizată pentru indicator. Imaginea va înlocui indicatorul circular implicit.";
 
 "IMPORT_IMAGE" = "Importă imagine indicator";
-"IMPORT_IMAGE_DESC" = "Importă o imagine pentru a fi folosită ca indicator din clipboard. Pentru o experiență optimă, imaginea nu ar trebui să fie mai mare de 48px pe 48px.";
+"IMPORT_IMAGE_DESC" = "Importă o imagine din clipboard pentru a fi folosită ca indicator. Pentru o experiență optimă, imaginea nu ar trebui să fie mai mare de 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Importă această imagine?";
 "IMPORT_THIS_IMAGE_DESC" = "Imaginea va fi salvată în folderul Documente al aplicației și folosită pentru indicatorul video.";
 
 "IMAGE_TOO_LARGE" = "Imagine prea mare";
-"IMAGE_TOO_LARGE_DESC" = "Imaginea este prea mare. Imaginea nu ar trebui să fie mai mare de 48px pe 48px.";
+"IMAGE_TOO_LARGE_DESC" = "Imaginea este prea mare. Imaginea nu ar trebui să depășească 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Vizualizează imaginea curentă a indicatorului";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Implicit";
 
 "ANIMATED_SLIDER" = "Animează cursorul și indicatorul";
-"ANIMATED_SLIDER_DESC" = "Animează cursorul și indicatorul când videoclipul este redat fără probleme.";
+"ANIMATED_SLIDER_DESC" = "Animează fluid cursorul și indicatorul în timpul redării videoclipului.";
