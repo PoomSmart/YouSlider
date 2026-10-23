@@ -1,38 +1,38 @@
-"ENABLED" = "Käytössä";
-"ENABLED_DESC" = "Sovelluksen uudelleenkäynnistys vaaditaan.";
+"ENABLED" = "Habilitado";
+"ENABLED_DESC" = "Se requiere reiniciar la aplicación.";
 
-"SLIDER_COLOR" = "Vaihda liukusäätimen väri";
-"SLIDER_COLOR_DESC" = "Muuttaa liukusäätimen värin. Tämä korvaa myös liukusäätimen liukuvärityylin uusimmissa YouTube-versioissa.";
-"SLIDER_COLOR_VALUE" = "Liukusäätimen väriarvo";
+"SLIDER_COLOR" = "Cambiar color del control deslizante";
+"SLIDER_COLOR_DESC" = "Cambia el color del control deslizante. Esto también reemplaza el efecto degradado de las versiones recientes de YouTube.";
+"SLIDER_COLOR_VALUE" = "Valor de color del control deslizante";
 
-"LIVE_SLIDER_COLOR_VALUE" = "Suoran liukusäätimen väriarvo";
+"LIVE_SLIDER_COLOR_VALUE" = "Valor de color del control deslizante en vivo";
 
-"SCRUBBER_COLOR" = "Vaihda scrubber väri";
-"SCRUBBER_COLOR_DESC" = "Muuttaa scrubberin värin. Tämä maalaa myös koko mukautetun scrubberkuvan määritetyllä värillä.";
-"SCRUBBER_COLOR_VALUE" = "Scrubber väriarvo";
+"SCRUBBER_COLOR" = "Cambiar color del indicador";
+"SCRUBBER_COLOR_DESC" = "Cambia el color del indicador. Esto también aplica el color especificado a toda la imagen personalizada del indicador.";
+"SCRUBBER_COLOR_VALUE" = "Valor de color del indicador";
 
-"LIVE_SCRUBBER_COLOR_VALUE" = "Suoran scrubberin väriarvo";
+"LIVE_SCRUBBER_COLOR_VALUE" = "Valor de color del indicador en vivo";
 
-"SCRUBBER_IMAGE" = "Käytä mukautettua scrubberkuvaa";
-"SCRUBBER_IMAGE_DESC" = "Käytä mukautettua kuvaa scrubberille. Kuva korvaa oletusympyräscrubberin.";
+"SCRUBBER_IMAGE" = "Usar imagen personalizada para el indicador";
+"SCRUBBER_IMAGE_DESC" = "Usa una imagen personalizada para el indicador. La imagen reemplazará el indicador circular predeterminado.";
 
-"IMPORT_IMAGE" = "Tuo scrubberkuva";
-"IMPORT_IMAGE_DESC" = "Tuo kuva käytettäväksi scrubberina leikepöydältä. Parhaan kokemuksen saavuttamiseksi kuvan ei tulisi olla suurempi kuin 48px kertaa 48px.";
+"IMPORT_IMAGE" = "Importar imagen del indicador";
+"IMPORT_IMAGE_DESC" = "Importa una imagen del portapapeles para usarla como indicador. Para una experiencia óptima, la imagen no debe ser mayor de 48 × 48 px.";
 
-"IMPORT_THIS_IMAGE" = "Tuodaanko tämä kuva?";
-"IMPORT_THIS_IMAGE_DESC" = "Kuva tallennetaan sovelluksen Dokumentit-kansioon ja käytetään videoscrubberille.";
+"IMPORT_THIS_IMAGE" = "¿Importar esta imagen?";
+"IMPORT_THIS_IMAGE_DESC" = "La imagen se guardará en la carpeta Documentos de la aplicación y se usará para el indicador de video.";
 
-"IMAGE_TOO_LARGE" = "Kuva liian suuri";
-"IMAGE_TOO_LARGE_DESC" = "Kuva on liian suuri. Kuvan ei tulisi olla suurempi kuin 48px kertaa 48px.";
+"IMAGE_TOO_LARGE" = "Imagen demasiado grande";
+"IMAGE_TOO_LARGE_DESC" = "La imagen es demasiado grande. La imagen no debe ser mayor de 48 × 48 px.";
 
-"VIEW_CURRENT_IMAGE" = "Näytä nykyinen scrubberkuva";
+"VIEW_CURRENT_IMAGE" = "Ver imagen actual del indicador";
 
-"NO_IMAGE" = "Kuvaa ei löytynyt";
-"NO_IMAGE_DESC" = "Leikepöydältä ei löytynyt kuvaa. Varmista, että kuva on kopioitu leikepöydälle ennen tuontia.";
+"NO_IMAGE" = "No se encontró ninguna imagen";
+"NO_IMAGE_DESC" = "No se encontró ninguna imagen en el portapapeles. Asegúrate de haber copiado una imagen antes de importar.";
 
-"SCRUBBER_SIZE" = "Suurenna scrubberin kokoa";
-"SCRUBBER_SIZE_DESC" = "Suurentaa scrubberin kokoa. Scrubberin koko skaalataan oletusscrubberin koon perusteella.";
-"SCRUBBER_SIZE_DEFAULT" = "Oletus";
+"SCRUBBER_SIZE" = "Aumentar tamaño del indicador";
+"SCRUBBER_SIZE_DESC" = "Aumenta el tamaño del indicador. El tamaño del indicador se escala según el tamaño predeterminado.";
+"SCRUBBER_SIZE_DEFAULT" = "Predeterminado";
 
-"ANIMATED_SLIDER" = "Animoi liukusäädin ja scrubber";
-"ANIMATED_SLIDER_DESC" = "Animoi liukusäädin ja scrubber, kun video toistetaan sujuvasti.";
+"ANIMATED_SLIDER" = "Animar control deslizante e indicador";
+"ANIMATED_SLIDER_DESC" = "Aplica una animación fluida al control deslizante y al indicador durante la reproducción del video.";
