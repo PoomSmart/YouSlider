@@ -8,7 +8,7 @@
 "LIVE_SLIDER_COLOR_VALUE" = "Live slider color value";
 
 "SCRUBBER_COLOR" = "Change scrubber color";
-"SCRUBBER_COLOR_DESC" = "Change the color of the scrubber. This also paints the entire custom scrubber image with the specified color.";
+"SCRUBBER_COLOR_DESC" = "Change the color of the scrubber. This also applies the specified color to the entire custom scrubber image.";
 "SCRUBBER_COLOR_VALUE" = "Scrubber color value";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubber color value";
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Default";
 
 "ANIMATED_SLIDER" = "Animate slider and scrubber";
-"ANIMATED_SLIDER_DESC" = "Animate the slider and scrubber when the video is playing smoothly.";
+"ANIMATED_SLIDER_DESC" = "Smoothly animate the slider and scrubber when the video is playing.";
