@@ -2,28 +2,28 @@
 "ENABLED_DESC" = "Uygulamanın yeniden başlatılması gerekiyor.";
 
 "SLIDER_COLOR" = "Kaydırıcı rengini değiştir";
-"SLIDER_COLOR_DESC" = "Kaydırıcının rengini değiştirir. Bu aynı zamanda son YouTube sürümlerinde kaydırıcının degrade stilini de değiştirir.";
+"SLIDER_COLOR_DESC" = "Kaydırıcının rengini değiştirir. Bu, en son YouTube sürümlerinde kaydırıcının degrade stilini de değiştirir.";
 "SLIDER_COLOR_VALUE" = "Kaydırıcı renk değeri";
 
-"LIVE_SLIDER_COLOR_VALUE" = "Canlı kaydırıcı renk değeri";
+"LIVE_SLIDER_COLOR_VALUE" = "Canlı yayın kaydırıcısı renk değeri";
 
 "SCRUBBER_COLOR" = "Gösterge rengini değiştir";
-"SCRUBBER_COLOR_DESC" = "Göstergenin rengini değiştirir. Bu aynı zamanda tüm özel gösterge görüntüsünü belirtilen renkle boyar.";
+"SCRUBBER_COLOR_DESC" = "Göstergenin rengini değiştirir. Belirtilen rengi özel gösterge görüntüsünün tamamına da uygular.";
 "SCRUBBER_COLOR_VALUE" = "Gösterge renk değeri";
 
-"LIVE_SCRUBBER_COLOR_VALUE" = "Canlı gösterge renk değeri";
+"LIVE_SCRUBBER_COLOR_VALUE" = "Canlı yayın göstergesi renk değeri";
 
 "SCRUBBER_IMAGE" = "Özel gösterge görüntüsü kullan";
 "SCRUBBER_IMAGE_DESC" = "Gösterge için özel bir görüntü kullanır. Görüntü, varsayılan dairesel göstergenin yerini alacaktır.";
 
 "IMPORT_IMAGE" = "Gösterge görüntüsünü içe aktar";
-"IMPORT_IMAGE_DESC" = "Panodan gösterge olarak kullanılacak bir görüntü içe aktarır. En iyi deneyim için görüntü 48px x 48px'den büyük olmamalıdır.";
+"IMPORT_IMAGE_DESC" = "Panodan gösterge olarak kullanılacak bir görüntü içe aktarır. En iyi deneyim için görüntünün 48 × 48 px boyutundan büyük olmaması önerilir.";
 
 "IMPORT_THIS_IMAGE" = "Bu görüntü içe aktarılsın mı?";
 "IMPORT_THIS_IMAGE_DESC" = "Görüntü, uygulamanın Belgeler klasörüne kaydedilecek ve video göstergesi için kullanılacaktır.";
 
 "IMAGE_TOO_LARGE" = "Görüntü çok büyük";
-"IMAGE_TOO_LARGE_DESC" = "Görüntü çok büyük. Görüntü 48px x 48px'den büyük olmamalıdır.";
+"IMAGE_TOO_LARGE_DESC" = "Görüntü çok büyük. Görüntü 48 × 48 px boyutundan büyük olmamalıdır.";
 
 "VIEW_CURRENT_IMAGE" = "Mevcut gösterge görüntüsünü görüntüle";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Varsayılan";
 
 "ANIMATED_SLIDER" = "Kaydırıcı ve göstergeyi canlandır";
-"ANIMATED_SLIDER_DESC" = "Video sorunsuz oynatılırken kaydırıcıyı ve göstergeyi canlandırır.";
+"ANIMATED_SLIDER_DESC" = "Video oynatılırken kaydırıcıyı ve göstergeyi akıcı bir şekilde canlandırır.";
