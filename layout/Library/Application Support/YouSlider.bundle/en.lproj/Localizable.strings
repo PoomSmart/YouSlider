@@ -17,13 +17,13 @@
 "SCRUBBER_IMAGE_DESC" = "Use a custom image for the scrubber. The image will replace the default circle scrubber.";
 
 "IMPORT_IMAGE" = "Import scrubber image";
-"IMPORT_IMAGE_DESC" = "Import an image to use as the scrubber from the clipboard. For the optimal experience, the image should not be larger than 48px by 48px.";
+"IMPORT_IMAGE_DESC" = "Import an image to use as the scrubber from the clipboard. For the optimal experience, the image should not be larger than 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Import this image?";
 "IMPORT_THIS_IMAGE_DESC" = "The image will be saved to the application Documents folder and used for the video scrubber.";
 
 "IMAGE_TOO_LARGE" = "Image too large";
-"IMAGE_TOO_LARGE_DESC" = "The image is too large. The image should not be larger than 48px by 48px.";
+"IMAGE_TOO_LARGE_DESC" = "The image is too large. The image should not be larger than 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "View current scrubber image";
 

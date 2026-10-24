@@ -14,7 +14,7 @@
 "LIVE_SCRUBBER_COLOR_VALUE" = "Valeur de couleur du curseur de lecture en direct";
 
 "SCRUBBER_IMAGE" = "Utiliser une image personnalisée pour le curseur";
-"SCRUBBER_IMAGE_DESC" = "Utilise une image personnalisée pour le curseur de lecture. L'image remplacera le bouton circulaire par défaut.";
+"SCRUBBER_IMAGE_DESC" = "Utilise une image personnalisée pour le curseur de lecture. L'image remplacera le curseur de lecture circulaire par défaut.";
 
 "IMPORT_IMAGE" = "Importer l'image du curseur";
 "IMPORT_IMAGE_DESC" = "Importe une image à utiliser comme curseur depuis le presse-papiers. Pour une expérience optimale, l'image ne doit pas dépasser 48 × 48 px.";
@@ -34,5 +34,5 @@
 "SCRUBBER_SIZE_DESC" = "Augmente la taille du curseur. La taille est mise à l'échelle en fonction de la taille par défaut.";
 "SCRUBBER_SIZE_DEFAULT" = "Par défaut";
 
-"ANIMATED_SLIDER" = "Animer le curseur et le bouton";
-"ANIMATED_SLIDER_DESC" = "Anime de manière fluide le curseur et le bouton pendant la lecture de la vidéo.";
+"ANIMATED_SLIDER" = "Animer le curseur et le curseur de lecture";
+"ANIMATED_SLIDER_DESC" = "Anime de manière fluide le curseur et le curseur de lecture pendant la lecture de la vidéo.";
