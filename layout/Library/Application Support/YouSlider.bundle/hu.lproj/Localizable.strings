@@ -5,25 +5,25 @@
 "SLIDER_COLOR_DESC" = "Módosítja a csúszka színét. Ez a legújabb YouTube verziókban a csúszka színátmenet stílusát is lecseréli.";
 "SLIDER_COLOR_VALUE" = "Csúszka színértéke";
 
-"LIVE_SLIDER_COLOR_VALUE" = "Élő csúszka színértéke";
+"LIVE_SLIDER_COLOR_VALUE" = "Élő adás csúszka színértéke";
 
 "SCRUBBER_COLOR" = "Scrubber színének módosítása";
-"SCRUBBER_COLOR_DESC" = "Módosítja a scrubber színét. Ez a teljes egyéni scrubber képet is a megadott színre festi.";
+"SCRUBBER_COLOR_DESC" = "Módosítja a scrubber színét. A megadott színt a teljes egyéni scrubber képre is alkalmazza.";
 "SCRUBBER_COLOR_VALUE" = "Scrubber színértéke";
 
-"LIVE_SCRUBBER_COLOR_VALUE" = "Élő scrubber színértéke";
+"LIVE_SCRUBBER_COLOR_VALUE" = "Élő adás scrubber színértéke";
 
 "SCRUBBER_IMAGE" = "Egyéni scrubber kép használata";
-"SCRUBBER_IMAGE_DESC" = "Egyéni képet használ a scrubberhez. A kép lecseréli az alapértelmezett kör alakú scrubberet.";
+"SCRUBBER_IMAGE_DESC" = "Egyéni képet használ a scrubberhez. A kép lecseréli az alapértelmezett kör alakú scrubbert.";
 
 "IMPORT_IMAGE" = "Scrubber kép importálása";
-"IMPORT_IMAGE_DESC" = "Importáljon egy képet scrubberként való használatra a vágólapról. Az optimális élmény érdekében a kép ne legyen nagyobb, mint 48px x 48px.";
+"IMPORT_IMAGE_DESC" = "Importáljon egy képet scrubberként való használatra a vágólapról. Az optimális élmény érdekében a kép ne legyen nagyobb, mint 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Importálja ezt a képet?";
 "IMPORT_THIS_IMAGE_DESC" = "A kép az alkalmazás Dokumentumok mappájába lesz mentve, és a videó scrubberhez lesz használva.";
 
 "IMAGE_TOO_LARGE" = "A kép túl nagy";
-"IMAGE_TOO_LARGE_DESC" = "A kép túl nagy. A kép ne legyen nagyobb, mint 48px x 48px.";
+"IMAGE_TOO_LARGE_DESC" = "A kép túl nagy. A kép ne legyen nagyobb, mint 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Jelenlegi scrubber kép megtekintése";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Alapértelmezett";
 
 "ANIMATED_SLIDER" = "Csúszka és scrubber animálása";
-"ANIMATED_SLIDER_DESC" = "Animálja a csúszkát és a scrubberet, amikor a videó simán játszódik le.";
+"ANIMATED_SLIDER_DESC" = "A videó lejátszása közben a csúszkát és a scrubbert simán animálja.";

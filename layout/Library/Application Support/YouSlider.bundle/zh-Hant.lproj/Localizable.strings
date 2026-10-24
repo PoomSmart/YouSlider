@@ -8,7 +8,7 @@
 "LIVE_SLIDER_COLOR_VALUE" = "直播滑桿顏色值";
 
 "SCRUBBER_COLOR" = "變更進度指示器顏色";
-"SCRUBBER_COLOR_DESC" = "變更進度指示器的顏色。這也會用指定的顏色繪製整個自訂進度指示器圖像。";
+"SCRUBBER_COLOR_DESC" = "變更進度指示器的顏色。這也會將指定顏色套用至整個自訂進度指示器圖像。";
 "SCRUBBER_COLOR_VALUE" = "進度指示器顏色值";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "直播進度指示器顏色值";
@@ -17,22 +17,22 @@
 "SCRUBBER_IMAGE_DESC" = "為進度指示器使用自訂圖像。該圖像將取代預設的圓形進度指示器。";
 
 "IMPORT_IMAGE" = "匯入進度指示器圖像";
-"IMPORT_IMAGE_DESC" = "從剪貼簿匯入要用作進度指示器的圖像。為獲得最佳體驗，圖像不應大於48px x 48px。";
+"IMPORT_IMAGE_DESC" = "從剪貼簿匯入要用作進度指示器的圖像。為獲得最佳體驗，圖像不應大於48 × 48像素。";
 
 "IMPORT_THIS_IMAGE" = "匯入此圖像？";
 "IMPORT_THIS_IMAGE_DESC" = "圖像將儲存到應用程式的Documents資料夾中，並用於影片進度指示器。";
 
 "IMAGE_TOO_LARGE" = "圖像太大";
-"IMAGE_TOO_LARGE_DESC" = "圖像太大。圖像不應大於48px x 48px。";
+"IMAGE_TOO_LARGE_DESC" = "圖像太大。圖像不應大於48 × 48像素。";
 
 "VIEW_CURRENT_IMAGE" = "檢視目前進度指示器圖像";
 
 "NO_IMAGE" = "找不到圖像";
 "NO_IMAGE_DESC" = "在剪貼簿中找不到圖像。請確保在匯入之前已將圖像複製到剪貼簿。";
 
-"SCRUBBER_SIZE" = "增加進度指示器大小";
-"SCRUBBER_SIZE_DESC" = "增加進度指示器的大小。進度指示器大小根據預設進度指示器大小進行縮放。";
+"SCRUBBER_SIZE" = "增大進度指示器大小";
+"SCRUBBER_SIZE_DESC" = "增大進度指示器的大小。進度指示器大小根據預設進度指示器大小進行縮放。";
 "SCRUBBER_SIZE_DEFAULT" = "預設";
 
-"ANIMATED_SLIDER" = "動畫滑桿和進度指示器";
-"ANIMATED_SLIDER_DESC" = "當影片流暢播放時，為滑桿和進度指示器新增動畫效果。";
+"ANIMATED_SLIDER" = "動畫化滑桿和進度指示器";
+"ANIMATED_SLIDER_DESC" = "在影片播放時，讓滑桿和進度指示器平滑滑動。";

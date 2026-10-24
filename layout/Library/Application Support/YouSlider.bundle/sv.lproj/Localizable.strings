@@ -1,38 +1,38 @@
 "ENABLED" = "Aktiverad";
 "ENABLED_DESC" = "Omstart av appen krävs.";
 
-"SLIDER_COLOR" = "Ändra skjutreglage färg";
-"SLIDER_COLOR_DESC" = "Ändrar färgen på skjutreglaget. Detta ersätter också gradientstilen för skjutreglaget i de senaste YouTube-versionerna.";
-"SLIDER_COLOR_VALUE" = "Skjutreglage färgvärde";
+"SLIDER_COLOR" = "Ändra skjutreglagefärg";
+"SLIDER_COLOR_DESC" = "Ändrar färgen på skjutreglaget. Detta ersätter även gradientstilen för skjutreglaget i de senaste YouTube-versionerna.";
+"SLIDER_COLOR_VALUE" = "Färgvärde för skjutreglage";
 
-"LIVE_SLIDER_COLOR_VALUE" = "Live skjutreglage färgvärde";
+"LIVE_SLIDER_COLOR_VALUE" = "Färgvärde för live-skjutreglage";
 
-"SCRUBBER_COLOR" = "Ändra scrubber färg";
-"SCRUBBER_COLOR_DESC" = "Ändrar färgen på scrubbern. Detta målar också hela den anpassade scrubberbilden med den angivna färgen.";
-"SCRUBBER_COLOR_VALUE" = "Scrubber färgvärde";
+"SCRUBBER_COLOR" = "Ändra scrubberfärg";
+"SCRUBBER_COLOR_DESC" = "Ändrar färgen på scrubbern. Detta tillämpar även den angivna färgen på hela den anpassade scrubberbilden.";
+"SCRUBBER_COLOR_VALUE" = "Färgvärde för scrubber";
 
-"LIVE_SCRUBBER_COLOR_VALUE" = "Live scrubber färgvärde";
+"LIVE_SCRUBBER_COLOR_VALUE" = "Färgvärde för live-scrubber";
 
 "SCRUBBER_IMAGE" = "Använd anpassad scrubberbild";
 "SCRUBBER_IMAGE_DESC" = "Använd en anpassad bild för scrubbern. Bilden kommer att ersätta den cirkulära standardscrubbern.";
 
 "IMPORT_IMAGE" = "Importera scrubberbild";
-"IMPORT_IMAGE_DESC" = "Importera en bild att använda som scrubber från urklipp. För bästa upplevelse bör bilden inte vara större än 48px gånger 48px.";
+"IMPORT_IMAGE_DESC" = "Importera en bild från urklipp att använda som scrubber. För bästa upplevelse bör bilden inte vara större än 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Importera denna bild?";
 "IMPORT_THIS_IMAGE_DESC" = "Bilden kommer att sparas i applikationens Dokumentmapp och användas för videoscrubbern.";
 
 "IMAGE_TOO_LARGE" = "Bilden är för stor";
-"IMAGE_TOO_LARGE_DESC" = "Bilden är för stor. Bilden bör inte vara större än 48px gånger 48px.";
+"IMAGE_TOO_LARGE_DESC" = "Bilden är för stor. Bilden får inte vara större än 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Visa aktuell scrubberbild";
 
 "NO_IMAGE" = "Ingen bild hittades";
 "NO_IMAGE_DESC" = "Ingen bild hittades i urklipp. Se till att en bild kopieras till urklipp innan import.";
 
-"SCRUBBER_SIZE" = "Öka scrubber storlek";
+"SCRUBBER_SIZE" = "Öka scrubberstorlek";
 "SCRUBBER_SIZE_DESC" = "Ökar storleken på scrubbern. Scrubberstorleken skalas baserat på standardstorleken.";
 "SCRUBBER_SIZE_DEFAULT" = "Standard";
 
 "ANIMATED_SLIDER" = "Animera skjutreglage och scrubber";
-"ANIMATED_SLIDER_DESC" = "Animerar skjutreglaget och scrubbern när videon spelas smidigt.";
+"ANIMATED_SLIDER_DESC" = "Animerar skjutreglaget och scrubbern jämnt under videouppspelning.";

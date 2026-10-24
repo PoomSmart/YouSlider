@@ -2,37 +2,37 @@
 "ENABLED_DESC" = "Yêu cầu khởi động lại ứng dụng.";
 
 "SLIDER_COLOR" = "Thay đổi màu Slider";
-"SLIDER_COLOR_DESC" = "Thay đổi màu của Slider.  Điều này cũng thay thế kiểu gradient của Slider cho các phiên bản YouTube gần đây.";
+"SLIDER_COLOR_DESC" = "Thay đổi màu của Slider. Điều này cũng thay thế kiểu gradient của Slider cho các phiên bản YouTube gần đây.";
 "SLIDER_COLOR_VALUE" = "Chọn màu cho Slider";
 
 "LIVE_SLIDER_COLOR_VALUE" = "Chọn màu cho Slider (Trực tiếp)";
 
 "SCRUBBER_COLOR" = "Thay đổi màu sắc Scrubber";
-"SCRUBBER_COLOR_DESC" = "Thay đổi màu của Scrubber.  Điều này cũng vẽ toàn bộ hình ảnh Scrubber tùy chỉnh với màu được chỉ định.";
+"SCRUBBER_COLOR_DESC" = "Thay đổi màu của Scrubber. Điều này cũng áp dụng màu đã chỉ định cho toàn bộ hình ảnh Scrubber tùy chỉnh.";
 "SCRUBBER_COLOR_VALUE" = "Giá trị màu sắc Scrubber";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "Giá trị màu sắc Scrubber (Trực tiếp)";
 
 "SCRUBBER_IMAGE" = "Sử dụng hình ảnh Scrubber tùy chỉnh";
-"SCRUBBER_IMAGE_DESC" = "Sử dụng một hình ảnh tùy chỉnh cho Scrubber.  Hình ảnh sẽ thay thế Scrubber mặc định.";
+"SCRUBBER_IMAGE_DESC" = "Sử dụng một hình ảnh tùy chỉnh cho Scrubber. Hình ảnh sẽ thay thế Scrubber mặc định.";
 
 "IMPORT_IMAGE" = "Nhập hình ảnh Scrubber";
-"IMPORT_IMAGE_DESC" = "Nhập hình ảnh để sử dụng Scrubber từ bảng tạm.  Đối với trải nghiệm tối ưu, hình ảnh không nên lớn hơn 48px bởi 48px.";
+"IMPORT_IMAGE_DESC" = "Nhập hình ảnh từ bảng tạm để sử dụng làm Scrubber. Để có trải nghiệm tối ưu, hình ảnh không nên lớn hơn 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Nhập hình ảnh này?";
 "IMPORT_THIS_IMAGE_DESC" = "Hình ảnh sẽ được lưu vào thư mục tài liệu ứng dụng và được sử dụng cho Scrubber video.";
 
 "IMAGE_TOO_LARGE" = "Hình ảnh quá lớn";
-"IMAGE_TOO_LARGE_DESC" = "Hình ảnh quá lớn.  Hình ảnh không được lớn hơn 48px bởi 48px.";
+"IMAGE_TOO_LARGE_DESC" = "Hình ảnh quá lớn. Hình ảnh không được lớn hơn 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Xem hình ảnh Scrubber hiện tại";
 
 "NO_IMAGE" = "Không tìm thấy hình ảnh";
-"NO_IMAGE_DESC" = "Không có hình ảnh được tìm thấy trong bảng tạm.  Đảm bảo rằng một hình ảnh được sao chép vào bảng tạm trước khi nhập.";
+"NO_IMAGE_DESC" = "Không tìm thấy hình ảnh trong bảng tạm. Đảm bảo rằng một hình ảnh được sao chép vào bảng tạm trước khi nhập.";
 
 "SCRUBBER_SIZE" = "Tăng kích thước Scrubber";
 "SCRUBBER_SIZE_DESC" = "Tăng kích thước của Scrubber. Kích thước Scrubber được tỷ lệ dựa trên kích thước Scrubber mặc định.";
 "SCRUBBER_SIZE_DEFAULT" = "Mặc định";
 
-"ANIMATED_SLIDER" = "Hoạt hình thanh trượt và Scrubber";
-"ANIMATED_SLIDER_DESC" = "Hoạt hình thanh trượt và Scrubber khi tiến trình video thay đổi một cách mượt mà.";
+"ANIMATED_SLIDER" = "Hoạt họa thanh trượt và Scrubber";
+"ANIMATED_SLIDER_DESC" = "Tạo hiệu ứng hoạt họa mượt mà cho thanh trượt và Scrubber khi phát video.";

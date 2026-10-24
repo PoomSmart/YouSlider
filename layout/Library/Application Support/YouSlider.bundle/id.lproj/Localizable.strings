@@ -1,29 +1,29 @@
-"ENABLED" = "Diaktifkan";
+"ENABLED" = "Aktif";
 "ENABLED_DESC" = "Diperlukan restart aplikasi.";
 
 "SLIDER_COLOR" = "Ubah warna slider";
 "SLIDER_COLOR_DESC" = "Mengubah warna slider. Ini juga menggantikan gaya gradien slider untuk versi YouTube terbaru.";
 "SLIDER_COLOR_VALUE" = "Nilai warna slider";
 
-"LIVE_SLIDER_COLOR_VALUE" = "Nilai warna slider langsung";
+"LIVE_SLIDER_COLOR_VALUE" = "Nilai warna slider siaran langsung";
 
 "SCRUBBER_COLOR" = "Ubah warna scrubber";
-"SCRUBBER_COLOR_DESC" = "Mengubah warna scrubber. Ini juga mewarnai seluruh gambar scrubber kustom dengan warna yang ditentukan.";
+"SCRUBBER_COLOR_DESC" = "Mengubah warna scrubber. Warna yang ditentukan juga akan diterapkan ke seluruh gambar scrubber kustom.";
 "SCRUBBER_COLOR_VALUE" = "Nilai warna scrubber";
 
-"LIVE_SCRUBBER_COLOR_VALUE" = "Nilai warna scrubber langsung";
+"LIVE_SCRUBBER_COLOR_VALUE" = "Nilai warna scrubber siaran langsung";
 
 "SCRUBBER_IMAGE" = "Gunakan gambar scrubber kustom";
 "SCRUBBER_IMAGE_DESC" = "Gunakan gambar kustom untuk scrubber. Gambar akan menggantikan scrubber lingkaran default.";
 
 "IMPORT_IMAGE" = "Impor gambar scrubber";
-"IMPORT_IMAGE_DESC" = "Impor gambar untuk digunakan sebagai scrubber dari clipboard. Untuk pengalaman optimal, gambar tidak boleh lebih besar dari 48px kali 48px.";
+"IMPORT_IMAGE_DESC" = "Impor gambar untuk digunakan sebagai scrubber dari clipboard. Untuk pengalaman optimal, gambar tidak boleh lebih besar dari 48 × 48 px.";
 
 "IMPORT_THIS_IMAGE" = "Impor gambar ini?";
 "IMPORT_THIS_IMAGE_DESC" = "Gambar akan disimpan ke folder Dokumen aplikasi dan digunakan untuk scrubber video.";
 
 "IMAGE_TOO_LARGE" = "Gambar terlalu besar";
-"IMAGE_TOO_LARGE_DESC" = "Gambar terlalu besar. Gambar tidak boleh lebih besar dari 48px kali 48px.";
+"IMAGE_TOO_LARGE_DESC" = "Gambar terlalu besar. Gambar tidak boleh lebih besar dari 48 × 48 px.";
 
 "VIEW_CURRENT_IMAGE" = "Lihat gambar scrubber saat ini";
 
@@ -35,4 +35,4 @@
 "SCRUBBER_SIZE_DEFAULT" = "Default";
 
 "ANIMATED_SLIDER" = "Animasikan slider dan scrubber";
-"ANIMATED_SLIDER_DESC" = "Menganimasikan slider dan scrubber saat video diputar dengan lancar.";
+"ANIMATED_SLIDER_DESC" = "Menganimasikan slider dan scrubber agar bergerak dengan mulus saat video diputar.";

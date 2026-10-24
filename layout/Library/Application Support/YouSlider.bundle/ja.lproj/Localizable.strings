@@ -2,37 +2,37 @@
 "ENABLED_DESC" = "アプリの再起動が必要です。";
 
 "SLIDER_COLOR" = "スライダーの色を変更";
-"SLIDER_COLOR_DESC" = "スライダーの色を変更します。これにより、最近のYouTubeバージョンのスライダーのグラデーションスタイルも置き換えられます。";
+"SLIDER_COLOR_DESC" = "スライダーの色を変更します。最新バージョンのYouTubeにおけるグラデーション効果もこの色に置き換わります。";
 "SLIDER_COLOR_VALUE" = "スライダーの色の値";
 
 "LIVE_SLIDER_COLOR_VALUE" = "ライブスライダーの色の値";
 
 "SCRUBBER_COLOR" = "スクラバーの色を変更";
-"SCRUBBER_COLOR_DESC" = "スクラバーの色を変更します。これにより、カスタムスクラバー画像全体が指定された色で塗りつぶされます。";
+"SCRUBBER_COLOR_DESC" = "スクラバーの色を変更します。カスタムスクラバー画像全体にも指定した色が適用されます。";
 "SCRUBBER_COLOR_VALUE" = "スクラバーの色の値";
 
 "LIVE_SCRUBBER_COLOR_VALUE" = "ライブスクラバーの色の値";
 
 "SCRUBBER_IMAGE" = "カスタムスクラバー画像を使用";
-"SCRUBBER_IMAGE_DESC" = "スクラバーにカスタム画像を使用します。画像はデフォルトの円形スクラバーを置き換えます。";
+"SCRUBBER_IMAGE_DESC" = "スクラバーにカスタム画像を使用します。デフォルトの円形スクラバーの代わりに画像が表示されます。";
 
 "IMPORT_IMAGE" = "スクラバー画像をインポート";
-"IMPORT_IMAGE_DESC" = "クリップボードからスクラバーとして使用する画像をインポートします。最適な体験のために、画像は48px×48pxを超えないようにしてください。";
+"IMPORT_IMAGE_DESC" = "クリップボードからスクラバーとして使用する画像をインポートします。最適な表示のため、48px×48px以下の画像を推奨します。";
 
 "IMPORT_THIS_IMAGE" = "この画像をインポートしますか？";
-"IMPORT_THIS_IMAGE_DESC" = "画像はアプリケーションのDocumentsフォルダに保存され、ビデオスクラバーに使用されます。";
+"IMPORT_THIS_IMAGE_DESC" = "画像はアプリのDocumentsフォルダに保存され、ビデオスクラバーに使用されます。";
 
 "IMAGE_TOO_LARGE" = "画像が大きすぎます";
-"IMAGE_TOO_LARGE_DESC" = "画像が大きすぎます。画像は48px×48pxを超えないようにしてください。";
+"IMAGE_TOO_LARGE_DESC" = "画像サイズが大きすぎます。48px×48px以下の画像を使用してください。";
 
 "VIEW_CURRENT_IMAGE" = "現在のスクラバー画像を表示";
 
 "NO_IMAGE" = "画像が見つかりません";
-"NO_IMAGE_DESC" = "クリップボードに画像が見つかりませんでした。インポートする前に画像がクリップボードにコピーされていることを確認してください。";
+"NO_IMAGE_DESC" = "クリップボードに画像が見つかりませんでした。インポートする前に画像がコピーされていることを確認してください。";
 
-"SCRUBBER_SIZE" = "スクラバーのサイズを増やす";
-"SCRUBBER_SIZE_DESC" = "スクラバーのサイズを増やします。スクラバーのサイズはデフォルトのスクラバーサイズに基づいてスケーリングされます。";
+"SCRUBBER_SIZE" = "スクラバーのサイズを拡大";
+"SCRUBBER_SIZE_DESC" = "スクラバーのサイズを大きくします。デフォルトのスクラバーサイズを基準に倍率が適用されます。";
 "SCRUBBER_SIZE_DEFAULT" = "デフォルト";
 
-"ANIMATED_SLIDER" = "スライダーとスクラバーをアニメーション化";
-"ANIMATED_SLIDER_DESC" = "ビデオがスムーズに再生されているときにスライダーとスクラバーをアニメーション化します。";
+"ANIMATED_SLIDER" = "スライダーとスクラバーのアニメーション";
+"ANIMATED_SLIDER_DESC" = "動画の再生中にスライダーとスクラバーが滑らかに動くようアニメーションを適用します。";
